@@ -1,0 +1,9 @@
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  line-height: unset;
+  vertical-align: middle;
+}
+[class^="bi-"] {
+  display: inline-flex;
+}

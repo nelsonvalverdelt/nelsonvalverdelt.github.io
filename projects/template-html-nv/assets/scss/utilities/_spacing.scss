@@ -1,0 +1,106 @@
+@each $key, $value in $spacing-scale {
+  //Margin
+  .m-#{$key} {
+    margin: $value;
+  }
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+  .ml-#{$key} {
+    margin-left: $value;
+  }
+  .mr-#{$key} {
+    margin-right: $value;
+  }
+  .my-#{$key} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+  .mx-#{$key} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  //Padding
+  .p-#{$key} {
+    padding: $value;
+  }
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
+  .pl-#{$key} {
+    padding-left: $value;
+  }
+  .pr-#{$key} {
+    padding-right: $value;
+  }
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+  .px-#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  //Gap
+  .gap-#{$key} {
+    gap: $value;
+  }
+
+  @each $keybp, $valuebp in $grid-breakpoints {
+    //Margin
+    .m-#{$keybp}-#{$key} {
+      margin: $value;
+    }
+    .mt-#{$keybp}-#{$key} {
+      margin-top: $value;
+    }
+    .mb-#{$keybp}-#{$key} {
+      margin-bottom: $value;
+    }
+    .ml-#{$keybp}-#{$key} {
+      margin-left: $value;
+    }
+    .mr-#{$keybp}-#{$key} {
+      margin-right: $value;
+    }
+    .my-#{$keybp}-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+    .mx-#{$keybp}-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    //Padding
+    .p-#{$keybp}-#{$key} {
+      padding: $value;
+    }
+    .pt-#{$keybp}-#{$key} {
+      padding-top: $value;
+    }
+    .pb-#{$keybp}-#{$key} {
+      padding-bottom: $value;
+    }
+    .pl-#{$keybp}-#{$key} {
+      padding-left: $value;
+    }
+    .pr-#{$keybp}-#{$key} {
+      padding-right: $value;
+    }
+    .py-#{$keybp}-#{$key} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+    .px-#{$keybp}-#{$key} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+  }
+}

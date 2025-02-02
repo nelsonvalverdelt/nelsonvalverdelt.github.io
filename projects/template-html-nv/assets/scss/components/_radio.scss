@@ -1,0 +1,62 @@
+.form-radio {
+  > input {
+    display: none;
+  }
+  > label {
+    cursor: pointer;
+    height: var(--nv-radio-size);
+    width: var(--nv-radio-size);
+    border: var(--nv-control-border-width) solid var(--nv-control-color);
+    border-radius: var(--nv-radio-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--nv-control-box-shadow);
+  }
+  &:has(> input[type="radio"]:checked) {
+    > label {
+      &::before {
+        content: "";
+        background-color: var(--nv-control-color);
+        height: var(--nv-radio-check-size);
+        width: var(--nv-radio-check-size);
+        border-radius: var(--nv-radio-check-radius);
+      }
+    }
+  }
+  @each $key, $value in $control-colors {
+    &.#{$key} {
+      > label {
+        border-color: $value;
+      }
+      &:has(> input[type="radio"]:checked) {
+        > label {
+          &::before {
+            background-color: $value;
+          }
+        }
+      }
+    }
+  }
+  &.filled {
+    > label {
+      background-color: var(--nv-control-color);
+    }
+    &:has(> input[type="radio"]:checked) {
+      > label {
+        &::before {
+          height: var(--nv-radio-check-filled-size);
+          width: var(--nv-radio-check-filled-size);
+          background-color: var(--nv-white);
+        }
+      }
+    }
+    @each $key, $value in $control-colors {
+      &.#{$key} {
+        > label {
+          background-color: $value;
+        }
+      }
+    }
+  }
+}

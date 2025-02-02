@@ -1,0 +1,55 @@
+.form-checkbox {
+  display: inline-flex;
+  > input {
+    display: none;
+  }
+  > label {
+    cursor: pointer;
+    height: var(--nv-checkbox-size);
+    width: var(--nv-checkbox-size);
+    border: var(--nv-control-border-width) solid var(--nv-control-color);
+    border-radius: var(--nv-control-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--nv-control-box-shadow);
+  }
+  &:has(> input[type="checkbox"]:checked) {
+    > label {
+      &::before {
+        font-family: "bootstrap-icons";
+        content: "\f26e";
+        font-size: var(--nv-checkbox-check-size);
+      }
+    }
+  }
+  @each $key, $value in $control-colors {
+    &.#{$key} {
+      > label {
+        border-color: $value;
+      }
+      &:has(> input:checked) {
+        > label {
+          &::before {
+            color: $value;
+          }
+        }
+      }
+
+      &.filled {
+        &:has(> input:checked) {
+          > label {
+            &::before {
+              color: var(--nv-white);
+            }
+          }
+        }
+        &:has(> input:checked) {
+          > label {
+            background-color: $value;
+          }
+        }
+      }
+    }
+  }
+}

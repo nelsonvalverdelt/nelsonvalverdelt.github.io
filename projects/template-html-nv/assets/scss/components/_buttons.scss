@@ -1,0 +1,51 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  outline: unset;
+  border: unset;
+  border-radius: var(--nv-btn-border-radius);
+  padding: var(--nv-btn-padding);
+  box-shadow: var(--nv-control-box-shadow);
+  cursor: pointer;
+  font-family: "Font-Medium";
+  font-size: var(--nv-control-font-size);
+  transition: background-color var(--nv-control-transition-timer) ease-in-out;
+
+  &.rounded {
+    border-radius: var(--nv-btn-border-radius-rounded);
+  }
+  &.btn-icon {
+    justify-items: center;
+    justify-content: center;
+    padding: var(--nv-btn-icon-rounded);
+    width: 2rem;
+    height: 2rem;
+  }
+  &.icon-rounded {
+    border-radius: 50%;
+  }
+  > .icon {
+    display: inline-flex;
+    &.icon-right {
+      padding-left: 0.35rem;
+    }
+    &.icon-left {
+      padding-right: 0.35rem;
+    }
+  }
+  @each $key, $value in $control-colors {
+    &.btn-#{$key} {
+      background-color: $value;
+      color: var(--nv-white);
+    }
+    &.btn-#{$key}-outline {
+      border: var(--nv-control-border-width) solid $value;
+      background: var(--nv-white);
+      &:hover {
+        border: unset;
+        background-color: $value;
+        color: var(--nv-white);
+      }
+    }
+  }
+}

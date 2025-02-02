@@ -1,0 +1,37 @@
+.form-input {
+  background-color: var(--nv-white);
+  padding: var(--nv-control-padding);
+  border-radius: var(--nv-control-border-radius);
+  padding-inline: var(--nv-control-padding-inline);
+  border: var(--nv-control-border-width) solid var(--nv-control-border-color);
+  transition: border-color var(--nv-control-transition-timer) ease-in-out,
+    box-shadow var(--nv-control-transition-timer) ease-in-out;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+  display: block;
+  margin-top: 0.25rem;
+  line-height: 1rem;
+  &::placeholder {
+    color: var(--nv-placeholder);
+    font-family: "Font-Medium";
+    font-size: var(--nv-control-font-size);
+  }
+  &:hover,
+  &:focus {
+    border-width: var(--nv-control-border-width-hover);
+    border-color: var(--nv-primary);
+    box-shadow: var(--nv-control-box-shadow);
+  }
+  @each $key, $value in $control-colors {
+    &.#{$key} {
+      &:hover,
+      &:focus {
+        border-color: $value;
+      }
+    }
+  }
+  &.rounded {
+    border-radius: var(--nv-control-border-radius-rounded);
+  }
+}

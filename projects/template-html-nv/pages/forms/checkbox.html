@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template HTML / SCSS - Checkbox NV</title>
+    <link rel="stylesheet" href="../../assets/scss/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="menu">
+        <div class="menu-header">
+          <div class="menu-header-nav">
+            <div class="logo"></div>
+            <div class="action-view-mode">
+              <input id="view-mode" type="checkbox" />
+              <label for="view-mode"></label>
+            </div>
+          </div>
+          <div class="search mt-4">
+            <input id="search" type="text" placeholder="Search" />
+            <label for="search" class="bi-search"></label>
+          </div>
+        </div>
+        <div class="my-2">
+          <div class="line-vertical"></div>
+        </div>
+        <div class="menu-body">
+          <ul class="menu-items">
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <em class="icon bi-house"></em>
+                <span class="name">Home</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <em class="icon bi-bar-chart-line"></em>
+                <span class="name">Dashboard</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <em class="icon bi-columns"></em>
+                <span class="name">Forms</span>
+                <em class="item-collapsed"></em>
+              </a>
+              <ul class="menu-subitems">
+                <li class="menu-item">
+                  <a href="" class="menu-item-link">
+                    <span class="name">Basic Form</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item active">
+              <a href="" class="menu-item-link">
+                <em class="icon bi-code-square"></em>
+                <span class="name">Components</span>
+                <em class="item-collapsed"></em>
+              </a>
+              <ul class="menu-subitems">
+                <li class="menu-item">
+                  <a href="./buttons.html" class="menu-item-link">
+                    <span class="name">Buttons</span>
+                    <span class="tag-count">6</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./checkbox.html" class="menu-item-link">
+                    <span class="name">Checkbox </span>
+                    <span class="tag-count">2</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./input.html" class="menu-item-link">
+                    <span class="name">Input</span>
+                    <span class="tag-count">3</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./radio.html" class="menu-item-link">
+                    <span class="name">Radio</span>
+                    <span class="tag-count">2</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./switches.html" class="menu-item-link">
+                    <span class="name">Switch</span>
+                    <span class="tag-count">2</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <em class="icon bi-question-octagon"></em>
+                <span class="name">Utils</span>
+                <em class="item-collapsed"></em>
+              </a>
+              <ul class="menu-subitems">
+                <li class="menu-item">
+                  <div class="menu-item-link">
+                    <em class="icon bi-info"></em>
+                    <a href="" class="name">Icons</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <h4 class="card-header">Basic Checkbox</h4>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-checkbox">
+                <input id="checkbox-1" type="checkbox" />
+                <label for="checkbox-1"></label>
+              </div>
+              <div class="form-checkbox primary">
+                <input id="checkbox-2" type="checkbox" />
+                <label for="checkbox-2"></label>
+              </div>
+              <div class="form-checkbox success">
+                <input id="checkbox-3" type="checkbox" />
+                <label for="checkbox-3"></label>
+              </div>
+              <div class="form-checkbox info">
+                <input id="checkbox-4" type="checkbox" />
+                <label for="checkbox-4"></label>
+              </div>
+              <div class="form-checkbox warning">
+                <input id="checkbox-5" type="checkbox" />
+                <label for="checkbox-5"></label>
+              </div>
+              <div class="form-checkbox danger">
+                <input id="checkbox-6" type="checkbox" />
+                <label for="checkbox-6"></label>
+              </div>
+              <div class="form-checkbox secondary">
+                <input id="checkbox-7" type="checkbox" />
+                <label for="checkbox-7"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <h4 class="card-header">Checkbox - filled</h4>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-checkbox filled">
+                <input id="checkbox-filled-1" type="checkbox" />
+                <label for="checkbox-filled-1"></label>
+              </div>
+              <div class="form-checkbox primary filled">
+                <input id="checkbox-filled-2" type="checkbox" />
+                <label for="checkbox-filled-2"></label>
+              </div>
+              <div class="form-checkbox success filled">
+                <input id="checkbox-filled-3" type="checkbox" />
+                <label for="checkbox-filled-3"></label>
+              </div>
+              <div class="form-checkbox info filled">
+                <input id="checkbox-filled-4" type="checkbox" />
+                <label for="checkbox-filled-4"></label>
+              </div>
+              <div class="form-checkbox warning filled">
+                <input id="checkbox-filled-5" type="checkbox" />
+                <label for="checkbox-filled-5"></label>
+              </div>
+              <div class="form-checkbox danger filled">
+                <input id="checkbox-filled-6" type="checkbox" />
+                <label for="checkbox-filled-6"></label>
+              </div>
+              <div class="form-checkbox secondary filled">
+                <input id="checkbox-filled-7" type="checkbox" />
+                <label for="checkbox-filled-7"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+:root {
+  //grid
+  --nv-grid-gap: 1rem;
+
+  //container
+  --nv-container-padding: 2.5rem 2.5rem;
+
+  //controls - General
+  --nv-control-border-width: 1px;
+  --nv-control-border-width-hover: 2px;
+  --nv-control-border-radius: 0.3rem;
+  --nv-control-border-radius-rounded: 1rem;
+  --nv-control-box-shadow: 0 2px 4px 0 var(--nv-muted);
+  --nv-control-padding-inline: 0.5rem;
+  --nv-control-padding: 0.45rem 0.25rem;
+  --nv-control-color: #444050;
+  --nv-control-border-color: #d1d0d4;
+  --nv-control-font-size: 14px;
+  --nv-control-help-color: #9590a3;
+  --nv-control-transition-timer: 0.2s;
+
+  //Buttons
+  --nv-btn-padding: 0.45rem 1rem;
+  --nv-btn-border-radius: 0.45rem;
+  --nv-btn-border-radius-rounded: 1rem;
+  --nv-btn-icon-rounded: 0.35rem 0.5rem;
+
+  //Switch
+  --nv-switch-border-color: #444050;
+  --nv-switch-width: 2.65rem;
+  --nv-switch-height: 1.5rem;
+  --nv-switch-check-width: 1.2rem;
+  --nv-switch-check-displacement: 0.2rem;
+  --nv-switch-border-radius: 0.3rem;
+  --nv-switch-box-shadow: 0px 0px 4px 1px var(--nv-muted);
+
+  --nv-switch-line-rounded: 1rem;
+  --nv-switch-line-width: 2.1rem;
+  --nv-switch-line-height: 0.75rem;
+  --nv-switch-line-height-2: 0.25rem;
+
+  //Checkbox
+  --nv-checkbox-size: 1.25rem;
+  --nv-checkbox-check-size: 1.25rem;
+
+  //radio
+  --nv-radio-border-radius: 1.25rem;
+  --nv-radio-size: 1.25rem;
+  --nv-radio-check-size: .75rem;
+  --nv-radio-check-filled-size: .5rem;
+  --nv-radio-check-radius: 50%;
+
+  //card
+  --nv-card-border-radius: 0.75rem;
+  --nv-card-padding: 1.5rem;
+  --nv-card-box-shadow: -1px -1px 8px 1px var(--nv-muted);
+
+}
+:root,
+[data-theme="light"] {
+  --nv-blue: #007bff;
+  --nv-indigo: #6610f2;
+  --nv-purple: #7367f0;
+  --nv-pink: #e83e8c;
+  --nv-red: #ff4c51;
+  --nv-orange: #fd7e14;
+  --nv-yellow: #ff9f43;
+  --nv-green: #28c76f;
+  --nv-teal: #20c997;
+  --nv-cyan: #00bad1;
+  --nv-black: #2f2b3d;
+  --nv-white: #fff;
+  --nv-gray: rgba(47, 43, 61, 0.6);
+  --nv-gray-dark: rgba(47, 43, 61, 0.8);
+  --nv-gray-25: rgba(47, 43, 61, 0.015);
+  --nv-gray-50: rgba(47, 43, 61, 0.06);
+  --nv-primary: #7367f0;
+  --nv-secondary: #808390;
+  --nv-success: #28c76f;
+  --nv-info: #00bad1;
+  --nv-warning: #ff9f43;
+  --nv-danger: #ff4c51;
+  --nv-light: #dfdfe3;
+  --nv-light-2: #f0f0f0;
+  --nv-dark: #4b4b4b;
+  --nv-primary-shadow: rgba(115, 103, 240, 0.3);
+  --nv-muted: rgba(136, 136, 136, 0.2);
+  --nv-placeholder: rgba(136, 136, 136, 0.5);
+  --nv-primary-rgb: 115, 103, 240;
+  --nv-secondary-rgb: 128, 131, 144;
+  --nv-success-rgb: 40, 199, 111;
+  --nv-info-rgb: 0, 186, 209;
+  --nv-warning-rgb: 255, 159, 67;
+  --nv-danger-rgb: 255, 76, 81;
+  --nv-light-rgb: 223, 223, 227;
+  --nv-dark-rgb: 75, 75, 75;
+  --nv-gray-rgb: 47, 43, 61;
+}
+
+$column-numbers: 12;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+$spacing-scale: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 2rem,
+);
+
+$control-colors: (
+  primary: var(--nv-primary),
+  success: var(--nv-success),
+  info: var(--nv-info),
+  warning: var(--nv-warning),
+  danger: var(--nv-danger),
+  secondary: var(--nv-secondary),
+);

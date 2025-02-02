@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template HTML / SCSS - Switches - NV</title>
+    <link rel="stylesheet" href="../../assets/scss/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="menu">
+        <div class="menu-header">
+          <div class="menu-header-nav">
+            <div class="logo"></div>
+            <div class="action-view-mode">
+              <input id="view-mode" type="checkbox" />
+              <label for="view-mode"></label>
+            </div>
+          </div>
+          <div class="search mt-4">
+            <input id="search" type="text" placeholder="Search" />
+            <label for="search" class="bi-search"></label>
+          </div>
+        </div>
+        <div class="my-2">
+          <div class="line-vertical"></div>
+        </div>
+        <div class="menu-body">
+          <ul class="menu-items">
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <em class="icon bi-house"></em>
+                <span class="name">Home</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <em class="icon bi-bar-chart-line"></em>
+                <span class="name">Dashboard</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <em class="icon bi-columns"></em>
+                <span class="name">Forms</span>
+                <em class="item-collapsed"></em>
+              </a>
+              <ul class="menu-subitems">
+                <li class="menu-item">
+                  <a href="" class="menu-item-link">
+                    <span class="name">Basic Form</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item active">
+              <a href="" class="menu-item-link">
+                <em class="icon bi-code-square"></em>
+                <span class="name">Components</span>
+                <em class="item-collapsed"></em>
+              </a>
+              <ul class="menu-subitems">
+                <li class="menu-item">
+                  <a href="./buttons.html" class="menu-item-link">
+                    <span class="name">Buttons</span>
+                    <span class="tag-count">6</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./checkbox.html" class="menu-item-link">
+                    <span class="name">Checkbox </span>
+                    <span class="tag-count">2</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./input.html" class="menu-item-link">
+                    <span class="name">Input</span>
+                    <span class="tag-count">3</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./radio.html" class="menu-item-link">
+                    <span class="name">Radio</span>
+                    <span class="tag-count">2</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./switches.html" class="menu-item-link">
+                    <span class="name">Switch</span>
+                    <span class="tag-count">2</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <em class="icon bi-question-octagon"></em>
+                <span class="name">Utils</span>
+                <em class="item-collapsed"></em>
+              </a>
+              <ul class="menu-subitems">
+                <li class="menu-item">
+                  <div class="menu-item-link">
+                    <em class="icon bi-info"></em>
+                    <a href="" class="name">Icons</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <h4 class="card-header">Basic Switches</h4>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-switch">
+                <input id="switch-1" type="checkbox" />
+                <label for="switch-1"></label>
+              </div>
+              <div class="form-switch primary">
+                <input id="switch-2" type="checkbox" />
+                <label for="switch-2"></label>
+              </div>
+              <div class="form-switch success">
+                <input id="switch-3" type="checkbox" />
+                <label for="switch-3"></label>
+              </div>
+              <div class="form-switch info">
+                <input id="switch-4" type="checkbox" />
+                <label for="switch-4"></label>
+              </div>
+              <div class="form-switch warning">
+                <input id="switch-5" type="checkbox" />
+                <label for="switch-5"></label>
+              </div>
+              <div class="form-switch danger">
+                <input id="switch-6" type="checkbox" />
+                <label for="switch-6"></label>
+              </div>
+              <div class="form-switch secondary">
+                <input id="switch-7" type="checkbox" />
+                <label for="switch-7"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <h4 class="card-header">Rounded</h4>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-switch rounded">
+                <input id="switch-rounded-1" type="checkbox" />
+                <label for="switch-rounded-1"></label>
+              </div>
+              <div class="form-switch primary rounded">
+                <input id="switch-rounded-2" type="checkbox" />
+                <label for="switch-rounded-2"></label>
+              </div>
+              <div class="form-switch success rounded">
+                <input id="switch-rounded-3" type="checkbox" />
+                <label for="switch-rounded-3"></label>
+              </div>
+              <div class="form-switch info rounded">
+                <input id="switch-rounded-4" type="checkbox" />
+                <label for="switch-rounded-4"></label>
+              </div>
+              <div class="form-switch warning rounded">
+                <input id="switch-rounded-5" type="checkbox" />
+                <label for="switch-rounded-5"></label>
+              </div>
+              <div class="form-switch danger rounded">
+                <input id="switch-rounded-6" type="checkbox" />
+                <label for="switch-rounded-6"></label>
+              </div>
+              <div class="form-switch secondary rounded">
+                <input id="switch-rounded-7" type="checkbox" />
+                <label for="switch-rounded-7"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <h4 class="card-header">Line</h4>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-switch-line">
+                <input id="switch-line-1" type="checkbox" />
+                <label for="switch-line-1"></label>
+              </div>
+              <div class="form-switch-line primary">
+                <input id="switch-line-2" type="checkbox" />
+                <label for="switch-line-2"></label>
+              </div>
+              <div class="form-switch-line success">
+                <input id="switch-line-3" type="checkbox" />
+                <label for="switch-line-3"></label>
+              </div>
+              <div class="form-switch-line info">
+                <input id="switch-line-4" type="checkbox" />
+                <label for="switch-line-4"></label>
+              </div>
+              <div class="form-switch-line warning">
+                <input id="switch-line-5" type="checkbox" />
+                <label for="switch-line-5"></label>
+              </div>
+              <div class="form-switch-line danger">
+                <input id="switch-line-6" type="checkbox" />
+                <label for="switch-line-6"></label>
+              </div>
+              <div class="form-switch-line secondary">
+                <input id="switch-line-7" type="checkbox" />
+                <label for="switch-line-7"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <h4 class="card-header">line v2</h4>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-switch-line line">
+                <input id="switch-line-8" type="checkbox" />
+                <label for="switch-line-8"></label>
+              </div>
+              <div class="form-switch-line primary line">
+                <input id="switch-line-9" type="checkbox" />
+                <label for="switch-line-9"></label>
+              </div>
+              <div class="form-switch-line success line">
+                <input id="switch-line-10" type="checkbox" />
+                <label for="switch-line-10"></label>
+              </div>
+              <div class="form-switch-line info line">
+                <input id="switch-line-11" type="checkbox" />
+                <label for="switch-line-11"></label>
+              </div>
+              <div class="form-switch-line warning line">
+                <input id="switch-line-12" type="checkbox" />
+                <label for="switch-line-12"></label>
+              </div>
+              <div class="form-switch-line danger line">
+                <input id="switch-line-13" type="checkbox" />
+                <label for="switch-line-13"></label>
+              </div>
+              <div class="form-switch-line secondary line">
+                <input id="switch-line-14" type="checkbox" />
+                <label for="switch-line-14"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

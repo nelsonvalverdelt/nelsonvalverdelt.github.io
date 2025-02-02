@@ -1,0 +1,169 @@
+//switch
+.form-switch {
+  display: inline-flex;
+  > input {
+    display: none;
+  }
+  > label {
+    cursor: pointer;
+    position: relative;
+    background-color: var(--nv-white);
+    width: var(--nv-switch-width);
+    height: var(--nv-switch-height);
+    border-radius: var(--nv-switch-border-radius);
+    box-shadow: var(--nv-switch-box-shadow);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    transition: background-color var(--nv-control-transition-timer) ease-in-out;
+    border: var(--nv-control-border-width) solid var(--nv-control-color);
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: var(--nv-control-color);
+      width: var(--nv-switch-check-width);
+      height: calc(var(--nv-switch-height) - 6px);
+      border-radius: var(--nv-switch-border-radius);
+      left: var(--nv-switch-check-displacement);
+      transition: left var(--nv-control-transition-timer) ease-in-out,
+        background-color var(--nv-control-transition-timer) ease-in-out;
+    }
+  }
+  &:has(> input:checked) {
+    > label {
+      background-color: var(--nv-control-color);
+      &::before {
+        left: calc(100% - var(--nv-switch-check-displacement) - var(--nv-switch-check-width) - 0.025rem);
+        background-color: var(--nv-white);
+      }
+    }
+  }
+  @each $key, $value in $control-colors {
+    &.#{$key} {
+      > label {
+        border-color: $value;
+        &::before {
+          background-color: $value;
+        }
+      }
+      &:has(> input:checked) {
+        > label {
+          background-color: $value;
+        }
+      }
+    }
+  }
+  &.rounded {
+    > label {
+      border-radius: var(--nv-switch-line-rounded);
+      &::before {
+        border-radius: var(--nv-switch-line-rounded);
+      }
+    }
+  }
+}
+
+//switch line
+.form-switch-line {
+  display: inline-flex;
+  > input {
+    display: none;
+  }
+  > label {
+    cursor: pointer;
+    position: relative;
+    width: var(--nv-switch-line-width);
+    height: var(--nv-switch-height);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    transition: background-color var(--nv-control-transition-timer) ease-in-out;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: var(--nv-switch-border-radius);
+      z-index: 20;
+      border: var(--nv-control-border-width) solid var(--nv-control-color);
+      border-radius: var(--nv-switch-line-rounded);
+      background-color: white;
+      width: var(--nv-switch-check-width);
+      height: calc(var(--nv-switch-height) - 6px);
+      left: 0;
+      transition: left var(--nv-control-transition-timer) ease-in-out,
+        background-color var(--nv-control-transition-timer) ease-in-out;
+      box-shadow: var(--nv-switch-box-shadow);
+    }
+    &::after {
+      content: "";
+      z-index: 10;
+      height: var(--nv-switch-line-height);
+      width: 100%;
+      background-color: var(--nv-control-color);
+      border-radius: var(--nv-switch-line-rounded);
+      position: absolute;
+      left: 0;
+      transition: left var(--nv-control-transition-timer) ease-in-out,
+        background-color var(--nv-control-transition-timer) ease-in-out;
+    }
+  }
+  &:has(> input:checked) {
+    > label {
+      background-color: unset;
+      &::before {
+        left: calc(100% - var(--nv-switch-check-width));
+        background-color: var(--nv-control-color);
+      }
+      &::after {
+        background-color: unset;
+        border: var(--nv-control-border-width) solid var(--nv-control-color);
+      }
+    }
+  }
+  @each $key, $value in $control-colors {
+    &.#{$key} {
+      > label {
+        &::before {
+          border: var(--nv-control-border-width) solid $value;
+        }
+        &::after {
+          background-color: $value;
+        }
+      }
+      &:has(> input:checked) {
+        > label {
+          &::before {
+            background-color: $value;
+          }
+          &::after {
+            border-color: $value;
+          }
+        }
+      }
+    }
+  }
+  &.line {
+    > label {
+      &::after {
+        height: var(--nv-switch-line-height-2);
+      }
+    }
+    &:has(> input:checked) {
+      > label {
+        &::after {
+          background-color: var(--nv-control-color);
+        }
+      }
+    }
+    @each $key, $value in $control-colors {
+      &.#{$key} {
+        &:has(> input:checked) {
+          > label {
+            &::after {
+              background-color: $value;
+            }
+          }
+        }
+      }
+    }
+  }
+}

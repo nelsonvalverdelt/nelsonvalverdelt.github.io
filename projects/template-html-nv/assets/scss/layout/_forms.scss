@@ -1,0 +1,69 @@
+$align-icon: 0.75rem;
+.form-group {
+  position: relative;
+  > label {
+    font-size: var(--nv-control-font-size);
+  }
+  > .help {
+    font-size: 12px;
+    color: var(--nv-control-help-color);
+    font-family: "Font-Regular";
+  }
+  &:has(> .icon-left) {
+    > .form-input {
+      padding-left: calc(var(--nv-control-padding-inline) + ($align-icon * 2));
+    }
+  }
+
+  &:has(> .icon-right) {
+    > .form-input {
+      padding-right: calc(var(--nv-control-padding-inline) + ($align-icon * 2));
+    }
+  }
+  > .icon {
+    position: absolute;
+    top: 0.4rem;
+    color: var(--nv-dark);
+    &.icon-right {
+      right: $align-icon;
+    }
+    &.icon-left {
+      left: $align-icon;
+    }
+  }
+  &.floating-label {
+    &:has(> .icon-left) {
+      > label {
+        left: calc(var(--nv-control-padding-inline) + ($align-icon * 2));
+      }
+    }
+
+    &:has(> .icon-right) {
+      > label {
+        right: calc(var(--nv-control-padding-inline) + ($align-icon * 2));
+      }
+    }
+    > label {
+      position: absolute;
+      top: 1rem;
+      left: var(--nv-control-padding-inline);
+      transform: translateY(-50%);
+      transition: top var(--nv-control-transition-timer) ease-in-out,
+        left var(--nv-control-transition-timer) ease-in-out, color var(--nv-control-transition-timer) ease-in-out;
+      color: var(--nv-placeholder);
+      cursor: text;
+    }
+    > .form-input {
+      &::placeholder {
+        color: transparent;
+      }
+    }
+    &:has(> .form-input:focus, > .form-input:not(:placeholder-shown)) {
+      > label {
+        top: -0.85rem;
+        left: 0;
+        color: var(--nv-control-color);
+      }
+    }
+  }
+}
