@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template HTML / SCSS - Tabs NV</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/scss/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="menu">
+        <div class="menu-header">
+          <div class="menu-header-nav">
+            <div class="logo"></div>
+            <div class="action-view-mode">
+              <input id="view-mode" type="checkbox" placeholder="view-mode" />
+              <label for="view-mode"></label>
+            </div>
+          </div>
+          <div class="search mt-4">
+            <input id="search" type="text" placeholder="Search" />
+            <label for="search" class="bi-search"></label>
+          </div>
+        </div>
+        <div class="my-2">
+          <div class="line-vertical"></div>
+        </div>
+        <div class="menu-body"></div>
+      </div>
+      <div class="main-body">
+        <div class="container">
+          <div class="card">
+            <h4 class="card-header">Tab default</h4>
+            <div class="card-body">
+              <div id="tab" class="tab">
+                <div class="tab-header">
+                  <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
+                  <div id="tab2" class="tab-header-item">Tab 2</div>
+                  <div id="tab3" class="tab-header-item">Tab 3</div>
+                  <div id="tab4" class="tab-header-item">Tab 4</div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <div class="px-3">
+                      <h4>Contenido Tab 1</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <h4>Contenido Tab 2</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab3">
+                    <div class="px-3">
+                      <h4>Contenido Tab 3</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab4">
+                    <div class="px-3">
+                      <h4>Contenido Tab 4</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3">
+            <h4 class="card-header">Tab line</h4>
+            <div class="card-body">
+              <div id="tab-line" class="tab">
+                <div class="tab-header line">
+                  <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
+                  <div id="tab2" class="tab-header-item">Tab Design 2</div>
+                  <div id="tab3" class="tab-header-item">Tab Curved 3</div>
+                  <div id="tab4" class="tab-header-item">Tab Test 4</div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <div class="px-3">
+                      <h4>Contenido Tab 1</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <h4>Contenido Tab 2</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab3">
+                    <div class="px-3">
+                      <h4>Contenido Tab 3</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab4">
+                    <div class="px-3">
+                      <h4>Contenido Tab 4</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3">
+            <h4 class="card-header">Tab curved</h4>
+            <div class="card-body">
+              <div id="tab-curved" class="tab">
+                <div class="tab-header curved">
+                  <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
+                  <div id="tab2" class="tab-header-item">Tab Design 2</div>
+                  <div id="tab3" class="tab-header-item">Tab Curved 3</div>
+                  <div id="tab4" class="tab-header-item">Tab Test 4</div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <div class="px-3">
+                      <h4>Contenido Tab 1</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <h4>Contenido Tab 2</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab3">
+                    <div class="px-3">
+                      <h4>Contenido Tab 3</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab4">
+                    <div class="px-3">
+                      <h4>Contenido Tab 4</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3">
+            <h4 class="card-header">Tab curved</h4>
+            <div class="card-body">
+              <div id="tab-curved-line" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
+                  <div id="tab2" class="tab-header-item">Tab Design 2</div>
+                  <div id="tab3" class="tab-header-item">Tab Curved 3</div>
+                  <div id="tab4" class="tab-header-item">Tab Test 4</div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <div class="px-3">
+                      <h4>Contenido Tab 1</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <h4>Contenido Tab 2</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab3">
+                    <div class="px-3">
+                      <h4>Contenido Tab 3</h4>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab4">
+                    <div class="px-3">
+                      <h4>Contenido Tab 4</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="/projects/template-html-nv/assets/js/menu/menu-route.js" defer></script>
+  <script src="/projects/template-html-nv/assets/js/menu/menu.js" defer></script>
+  <script src="/projects/template-html-nv/assets/js/tab.js"></script>
+  <script>
+    fnTab("#tab");
+    fnTab("#tab-line");
+    fnTab("#tab-curved");
+    fnTab("#tab-curved-line");
+  </script>
+</html>

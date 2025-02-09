@@ -1,9 +1,12 @@
 .menu {
-  width: 17rem;
+  width: $menu-width-desktop;
   box-shadow: 0px 0px 4px 1px var(--nv-muted);
-  height: 100vh;
+  position: fixed;
+  height: 100%;
   padding: 1rem 0.75rem;
   transition: width 0.35s ease-in-out;
+  background-color: var(--nv-white);
+  z-index: 999;
   > .menu-header {
     > .menu-header-nav {
       display: flex;
@@ -65,6 +68,10 @@
     }
   }
   > .menu-body {
+    height: 100%;
+    overflow-y: auto;
+  }
+  > .menu-body {
     .menu-items,
     .menu-subitems {
       list-style: none;
@@ -79,11 +86,11 @@
     }
   }
   &:has(> .menu-header > .menu-header-nav > .action-view-mode > input[type="checkbox"]:checked) {
-    width: 4rem;
+    width: $menu-width-mobile;
     > .menu-header {
       > .search {
         &:has(> input:focus) {
-          width: 20rem;
+          width: $menu-width-mobile;
         }
       }
     }
@@ -141,6 +148,9 @@
     > .icon {
       color: var(--nv-dark);
       font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     > .tag-count {
       margin-left: auto;
@@ -157,6 +167,9 @@
     }
     > .item-collapsed {
       margin-left: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &::before {
         font-family: "bootstrap-icons";
         content: "\f285";
@@ -189,4 +202,7 @@
       }
     }
   }
+}
+
+@media (max-width: 576px) {
 }

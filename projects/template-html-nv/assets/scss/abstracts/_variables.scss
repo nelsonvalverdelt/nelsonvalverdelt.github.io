@@ -46,15 +46,24 @@
   //radio
   --nv-radio-border-radius: 1.25rem;
   --nv-radio-size: 1.25rem;
-  --nv-radio-check-size: .75rem;
-  --nv-radio-check-filled-size: .5rem;
+  --nv-radio-check-size: 0.75rem;
+  --nv-radio-check-filled-size: 0.5rem;
   --nv-radio-check-radius: 50%;
 
   //card
   --nv-card-border-radius: 0.75rem;
   --nv-card-padding: 1.5rem;
-  --nv-card-box-shadow: -1px -1px 8px 1px var(--nv-muted);
+  --nv-card-box-shadow: 0px 0px 6px 0px var(--nv-muted);
 
+  //tabs
+  --nv-tabs-gap: 0.5rem;
+  --nv-tabs-border-radius: 0.5rem;
+  --nv-tabs-padding-item: 0.5rem 2rem;
+  --nv-tabs-body: 1.5rem 0;
+  --nv-tabs-item-box-shadow: 0 -0.5px 0 0.5px var(--nv-muted);
+  --nv-tabs-body-box-shadow: 0 0 0.5px 0.5px var(--nv-muted);
+
+  --nv-tabs-curved-padding-item: 4rem;
 }
 :root,
 [data-theme="light"] {
@@ -74,7 +83,7 @@
   --nv-gray-dark: rgba(47, 43, 61, 0.8);
   --nv-gray-25: rgba(47, 43, 61, 0.015);
   --nv-gray-50: rgba(47, 43, 61, 0.06);
-  --nv-primary: #7367f0;
+  --nv-primary: #214674;
   --nv-secondary: #808390;
   --nv-success: #28c76f;
   --nv-info: #00bad1;
@@ -83,10 +92,10 @@
   --nv-light: #dfdfe3;
   --nv-light-2: #f0f0f0;
   --nv-dark: #4b4b4b;
-  --nv-primary-shadow: rgba(115, 103, 240, 0.3);
+  --nv-primary-shadow: rgba(33, 70, 116, 0.3);
   --nv-muted: rgba(136, 136, 136, 0.2);
   --nv-placeholder: rgba(136, 136, 136, 0.5);
-  --nv-primary-rgb: 115, 103, 240;
+  --nv-primary-rgb: 33, 70, 116;
   --nv-secondary-rgb: 128, 131, 144;
   --nv-success-rgb: 40, 199, 111;
   --nv-info-rgb: 0, 186, 209;
@@ -96,7 +105,8 @@
   --nv-dark-rgb: 75, 75, 75;
   --nv-gray-rgb: 47, 43, 61;
 }
-
+$menu-width-mobile: 4rem;
+$menu-width-desktop: 20rem;
 $column-numbers: 12;
 $grid-breakpoints: (
   xs: 0,
@@ -113,7 +123,6 @@ $spacing-scale: (
   3: 1rem,
   4: 2rem,
 );
-
 $control-colors: (
   primary: var(--nv-primary),
   success: var(--nv-success),

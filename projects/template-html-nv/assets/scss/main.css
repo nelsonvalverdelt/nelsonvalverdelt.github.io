@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@keyframes line-horizontal {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
 :root {
   --nv-grid-gap: 1rem;
   --nv-container-padding: 2.5rem 2.5rem;
@@ -33,12 +41,19 @@
   --nv-checkbox-check-size: 1.25rem;
   --nv-radio-border-radius: 1.25rem;
   --nv-radio-size: 1.25rem;
-  --nv-radio-check-size: .75rem;
-  --nv-radio-check-filled-size: .5rem;
+  --nv-radio-check-size: 0.75rem;
+  --nv-radio-check-filled-size: 0.5rem;
   --nv-radio-check-radius: 50%;
   --nv-card-border-radius: 0.75rem;
   --nv-card-padding: 1.5rem;
-  --nv-card-box-shadow: -1px -1px 8px 1px var(--nv-muted);
+  --nv-card-box-shadow: 0px 0px 6px 0px var(--nv-muted);
+  --nv-tabs-gap: 0.5rem;
+  --nv-tabs-border-radius: 0.5rem;
+  --nv-tabs-padding-item: 0.5rem 2rem;
+  --nv-tabs-body: 1.5rem 0;
+  --nv-tabs-item-box-shadow: 0 -0.5px 0 0.5px var(--nv-muted);
+  --nv-tabs-body-box-shadow: 0 0 0.5px 0.5px var(--nv-muted);
+  --nv-tabs-curved-padding-item: 4rem;
 }
 
 :root,
@@ -59,7 +74,7 @@
   --nv-gray-dark: rgba(47, 43, 61, 0.8);
   --nv-gray-25: rgba(47, 43, 61, 0.015);
   --nv-gray-50: rgba(47, 43, 61, 0.06);
-  --nv-primary: #7367f0;
+  --nv-primary: #214674;
   --nv-secondary: #808390;
   --nv-success: #28c76f;
   --nv-info: #00bad1;
@@ -68,10 +83,10 @@
   --nv-light: #dfdfe3;
   --nv-light-2: #f0f0f0;
   --nv-dark: #4b4b4b;
-  --nv-primary-shadow: rgba(115, 103, 240, 0.3);
+  --nv-primary-shadow: rgba(33, 70, 116, 0.3);
   --nv-muted: rgba(136, 136, 136, 0.2);
   --nv-placeholder: rgba(136, 136, 136, 0.5);
-  --nv-primary-rgb: 115, 103, 240;
+  --nv-primary-rgb: 33, 70, 116;
   --nv-secondary-rgb: 128, 131, 144;
   --nv-success-rgb: 40, 199, 111;
   --nv-info-rgb: 0, 186, 209;
@@ -11145,11 +11160,14 @@ h6 {
 }
 
 .menu {
-  width: 17rem;
+  width: 20rem;
   box-shadow: 0px 0px 4px 1px var(--nv-muted);
-  height: 100vh;
+  position: fixed;
+  height: 100%;
   padding: 1rem 0.75rem;
   transition: width 0.35s ease-in-out;
+  background-color: var(--nv-white);
+  z-index: 999;
 }
 .menu > .menu-header > .menu-header-nav {
   display: flex;
@@ -11208,6 +11226,10 @@ h6 {
   font-weight: bold;
   opacity: 0.5;
 }
+.menu > .menu-body {
+  height: 100%;
+  overflow-y: auto;
+}
 .menu > .menu-body .menu-items,
 .menu > .menu-body .menu-subitems {
   list-style: none;
@@ -11223,7 +11245,7 @@ h6 {
   width: 4rem;
 }
 .menu:has(> .menu-header > .menu-header-nav > .action-view-mode > input[type=checkbox]:checked) > .menu-header > .search:has(> input:focus) {
-  width: 20rem;
+  width: 4rem;
 }
 .menu:has(> .menu-header > .menu-header-nav > .action-view-mode > input[type=checkbox]:checked) .menu-item > .menu-item-link {
   justify-content: center;
@@ -11277,6 +11299,9 @@ h6 {
 .menu-item > .menu-item-link > .icon {
   color: var(--nv-dark);
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-item > .menu-item-link > .tag-count {
   margin-left: auto;
@@ -11293,6 +11318,9 @@ h6 {
 }
 .menu-item > .menu-item-link > .item-collapsed {
   margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-item > .menu-item-link > .item-collapsed::before {
   font-family: "bootstrap-icons";
@@ -11316,6 +11344,72 @@ h6 {
   box-shadow: 0px 0px 4px 1px var(--nv-muted);
   position: absolute;
   left: 0;
+}
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow-y: auto;
+  padding: 0.1rem;
+}
+.tab > .tab-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: var(--nv-tabs-gap);
+  bottom: -1px;
+}
+.tab > .tab-header > .tab-header-item {
+  display: flex;
+  font-family: "Font-Medium";
+  cursor: pointer;
+  padding: var(--nv-tabs-padding-item);
+  border-top-right-radius: var(--nv-tabs-border-radius);
+  border-top-left-radius: var(--nv-tabs-border-radius);
+  box-shadow: var(--nv-tabs-item-box-shadow);
+  background-color: rgba(var(--nv-primary-rgb), 0.1);
+}
+.tab > .tab-header > .tab-header-item.active {
+  background-color: var(--nv-white);
+}
+.tab > .tab-header.line > .tab-header-item {
+  background-color: var(--nv-white);
+  position: relative;
+}
+.tab > .tab-header.line > .tab-header-item.active {
+  color: var(--nv-primary);
+  font-family: "Font-Medium";
+}
+.tab > .tab-header.line > .tab-header-item.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--nv-primary);
+  animation: line-horizontal 0.25s;
+}
+.tab > .tab-header.curved > .tab-header-item {
+  border-top-right-radius: var(--nv-tabs-curved-padding-item);
+}
+.tab > .tab-body {
+  width: 100%;
+  box-shadow: var(--nv-tabs-body-box-shadow);
+  padding: var(--nv-tabs-body);
+  border-bottom-right-radius: var(--nv-tabs-border-radius);
+  border-bottom-left-radius: var(--nv-tabs-border-radius);
+  background-color: var(--nv-white);
+}
+.tab > .tab-body > .tab-body-item {
+  opacity: 0;
+  display: none;
+  transition: opacity var(--nv-control-transition-timer) ease-in-out;
+}
+.tab > .tab-body > .tab-body-item.active {
+  opacity: 1;
+  display: block;
 }
 
 .line-vertical {
@@ -11923,6 +12017,14 @@ h6 {
   width: 100%;
   height: 100%;
   flex-direction: row;
+}
+.main:has(> .menu > .menu-header > .menu-header-nav > .action-view-mode > input[type=checkbox]:checked) > .main-body {
+  margin-left: 4rem;
+}
+.main > .main-body {
+  width: 100%;
+  margin-left: 20rem;
+  transition: margin-left 0.25s ease-in-out;
 }
 .main .container {
   width: 100%;
