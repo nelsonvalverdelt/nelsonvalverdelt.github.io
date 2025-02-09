@@ -42,7 +42,7 @@ function menu() {
       const icon = item.icon ? ` <em class="icon ${item.icon}"></em>` : "";
       const span = item.span ? `<span class="tag-count">${item.span}</span>` : "";
       return `
-          <a href="${item.path}" class="menu-item-link">
+          <a ${item.path ? `href=${item.path}` : ""}  class="menu-item-link">
             ${icon}
             <span class="name">${item.name}</span>
             ${span}
