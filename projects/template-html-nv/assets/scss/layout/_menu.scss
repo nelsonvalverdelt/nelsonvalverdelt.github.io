@@ -126,7 +126,6 @@
   display: inline-flex;
   flex-wrap: wrap;
   > .menu-item-link {
-    text-decoration: none;
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
@@ -142,6 +141,7 @@
       }
     }
     > .name {
+      text-decoration: none;
       font-family: "Font-Medium";
       color: var(--nv-dark);
     }
@@ -170,6 +170,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      border: unset;
+      background-color: transparent;
       &::before {
         font-family: "bootstrap-icons";
         content: "\f285";

@@ -18,15 +18,7 @@ const menuRoutes = [
     icon: "bi-columns",
     path: null,
     active: false,
-    children: [
-      {
-        name: "Basic Form",
-        icon: "",
-        path: "",
-        active: false,
-        children: []
-      },
-    ],
+    children: [],
   },
   {
     name: "Components",
@@ -87,14 +79,14 @@ const menuRoutes = [
         icon: null,
         path: "/projects/template-html-nv/pages/panel/card.html",
         active: false,
-        children: []
+        children: [],
       },
       {
         name: "Tabs",
         icon: null,
         path: "/projects/template-html-nv/pages/panel/tabs.html",
         active: false,
-        children: []
+        children: [],
       },
     ],
   },

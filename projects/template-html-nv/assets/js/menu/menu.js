@@ -30,28 +30,37 @@ function menu() {
       }
       return menuItemBuild;
     },
-    recursiveSimpleItems: (children, menuItemBuild = "") => {
-      for (const item of children) {
-        menuItemBuild += fn.getMenuItem(item);
-        fn.recursiveSimpleItems(item.children, menuItemBuild);
-      }
-      return menuItemBuild;
-    },
     getMenuItem: (item) => {
-      const itemAcollapsed = item.active ? '<em class="item-collapsed"></em>' : "";
+      const itemAcollapsed = item.active
+        ? '<button type="button" class="item-collapsed" onclick="$menu.triggerItemMenu(this)"></button>'
+        : "";
       const icon = item.icon ? ` <em class="icon ${item.icon}"></em>` : "";
-      const span = item.span ? `<span class="tag-count">${item.span}</span>` : "";
+      const span = item?.span ? `<span class="tag-count">${item.span}</span>` : "";
       return `
-          <a ${item.path ? `href=${item.path}` : ""}  class="menu-item-link">
+          <div class="menu-item-link">
             ${icon}
-            <span class="name">${item.name}</span>
+            <a ${item.path ? `href=${item.path}` : ""} class="name">${item.name}</a>
             ${span}
             ${itemAcollapsed}
-          </a>
+          </div>
         `;
     },
+    actions: {
+      triggerItemMenu: (e) => {
+        const menuItem = e.closest(".menu-item");
+        const menuItemIsActive = menuItem.classList.contains("active");
+        if (menuItemIsActive) {
+          menuItem.classList.remove("active");
+        } else {
+          menuItem.classList.add("active");
+        }
+      },
+    },
   };
-  return fn.loadMenu();
+  fn.loadMenu();
+  return {
+    triggerItemMenu: fn.actions.triggerItemMenu,
+  };
 }
 
-menu();
+let $menu = menu();

@@ -11276,7 +11276,6 @@ h6 {
   flex-wrap: wrap;
 }
 .menu-item > .menu-item-link {
-  text-decoration: none;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -11293,6 +11292,7 @@ h6 {
   font-family: "Font-Bold";
 }
 .menu-item > .menu-item-link > .name {
+  text-decoration: none;
   font-family: "Font-Medium";
   color: var(--nv-dark);
 }
@@ -11321,6 +11321,8 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: unset;
+  background-color: transparent;
 }
 .menu-item > .menu-item-link > .item-collapsed::before {
   font-family: "bootstrap-icons";
@@ -11369,6 +11371,7 @@ h6 {
   border-top-left-radius: var(--nv-tabs-border-radius);
   box-shadow: var(--nv-tabs-item-box-shadow);
   background-color: rgba(var(--nv-primary-rgb), 0.1);
+  white-space: nowrap;
 }
 .tab > .tab-header > .tab-header-item.active {
   background-color: var(--nv-white);
