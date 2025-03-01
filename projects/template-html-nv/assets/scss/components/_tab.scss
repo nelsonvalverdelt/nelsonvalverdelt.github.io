@@ -19,6 +19,7 @@
       border-top-left-radius: var(--nv-tabs-border-radius);
       box-shadow: var(--nv-tabs-item-box-shadow);
       background-color: rgba(var(--nv-primary-rgb), 0.1);
+      white-space: nowrap;
       &.active {
         background-color: var(--nv-white);
       }
