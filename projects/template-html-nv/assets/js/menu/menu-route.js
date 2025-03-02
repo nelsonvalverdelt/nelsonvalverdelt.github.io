@@ -4,6 +4,7 @@ const menuRoutes = [
     icon: "bi-house",
     path: null,
     active: false,
+    span: null,
     children: [],
   },
   {
@@ -11,6 +12,7 @@ const menuRoutes = [
     icon: "bi-bar-chart-line",
     path: null,
     active: false,
+    span: null,
     children: [],
   },
   {
@@ -18,6 +20,7 @@ const menuRoutes = [
     icon: "bi-columns",
     path: null,
     active: false,
+    span: null,
     children: [],
   },
   {
@@ -25,6 +28,7 @@ const menuRoutes = [
     icon: "bi-code-square",
     path: null,
     active: true,
+    span: null,
     children: [
       {
         name: "Buttons",
@@ -73,12 +77,14 @@ const menuRoutes = [
     icon: "bi-window-split",
     path: null,
     active: true,
+    span: null,
     children: [
       {
         name: "Card",
         icon: null,
         path: "/projects/template-html-nv/pages/panel/card.html",
         active: false,
+        span: null,
         children: [],
       },
       {
@@ -86,6 +92,7 @@ const menuRoutes = [
         icon: null,
         path: "/projects/template-html-nv/pages/panel/tabs.html",
         active: false,
+        span: null,
         children: [],
       },
     ],

@@ -10453,6 +10453,23 @@
   display: inline-flex;
 }
 
+code[class*=language-],
+pre[class*=language-] {
+  font-family: unset;
+  margin: 0;
+  padding: 0;
+  background-color: unset;
+  width: 100%;
+}
+
+pre[class*=language-] {
+  display: flex;
+  flex-wrap: wrap;
+}
+pre[class*=language-] > button {
+  margin-left: auto;
+}
+
 *,
 ::after,
 ::before {
@@ -11240,6 +11257,8 @@ h6 {
 .menu > .menu-body .menu-subitems {
   height: 0;
   opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s ease-in-out, width 0.12 ease-in-out, height 0.12s ease-in-out;
 }
 .menu:has(> .menu-header > .menu-header-nav > .action-view-mode > input[type=checkbox]:checked) {
   width: 4rem;
@@ -11283,6 +11302,7 @@ h6 {
   gap: 0.5rem;
   padding: 0.75rem 0.75rem;
   width: 100%;
+  text-decoration: none;
 }
 .menu-item > .menu-item-link:hover {
   background-color: var(--nv-light-2);
@@ -11292,7 +11312,6 @@ h6 {
   font-family: "Font-Bold";
 }
 .menu-item > .menu-item-link > .name {
-  text-decoration: none;
   font-family: "Font-Medium";
   color: var(--nv-dark);
 }
@@ -11323,6 +11342,7 @@ h6 {
   align-items: center;
   border: unset;
   background-color: transparent;
+  cursor: pointer;
 }
 .menu-item > .menu-item-link > .item-collapsed::before {
   font-family: "bootstrap-icons";
@@ -11335,6 +11355,7 @@ h6 {
   position: relative;
   height: 100%;
   opacity: 1;
+  visibility: visible;
   margin-left: 1.25rem;
 }
 .menu-item.active > .menu-subitems > .menu-item {

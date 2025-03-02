@@ -1,0 +1,16 @@
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: unset;
+  margin: 0;
+  padding: 0;
+  background-color: unset;
+  width: 100%;
+}
+
+pre[class*="language-"] {
+  display: flex;
+  flex-wrap: wrap;
+  > button {
+    margin-left: auto;
+  }
+}

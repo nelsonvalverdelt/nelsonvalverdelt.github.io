@@ -34,15 +34,15 @@ function menu() {
       const itemAcollapsed = item.active
         ? '<button type="button" class="item-collapsed" onclick="$menu.triggerItemMenu(this)"></button>'
         : "";
-      const icon = item.icon ? ` <em class="icon ${item.icon}"></em>` : "";
+      const icon = item?.icon ? ` <em class="icon ${item.icon}"></em>` : "";
       const span = item?.span ? `<span class="tag-count">${item.span}</span>` : "";
       return `
-          <div class="menu-item-link">
+          <a ${item?.path ? `href=${item.path}` : ""} class="menu-item-link">
             ${icon}
-            <a ${item.path ? `href=${item.path}` : ""} class="name">${item.name}</a>
+            <span class="name">${item.name}</span>
             ${span}
             ${itemAcollapsed}
-          </div>
+          </a>
         `;
     },
     actions: {
