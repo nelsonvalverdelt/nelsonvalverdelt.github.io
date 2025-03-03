@@ -10469,6 +10469,35 @@ pre[class*=language-] > button {
   margin-left: auto;
 }
 
+.prism-toast {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  bottom: 0.5rem;
+  transition: bottom ease-in-out 0.2s, opacity ease-in-out 0.2s, visibility ease-in-out 0.2s;
+  opacity: 1;
+  visibility: visible;
+}
+.prism-toast > .content {
+  display: inline-flex;
+  box-shadow: 0 2px 4px 0 var(--nv-muted);
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  gap: 0.5rem;
+  background-color: #f0f0f0;
+}
+.prism-toast > .content > .message {
+  color: black;
+}
+.prism-toast.hide {
+  bottom: -1rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
 *,
 ::after,
 ::before {

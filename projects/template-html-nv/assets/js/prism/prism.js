@@ -14,6 +14,7 @@ function customPrism() {
         btnElement.classList.add("btn-primary");
         btnElement.addEventListener("click", () => {
           navigator.clipboard.writeText(innerHtml);
+          $prismToast.show("Code copied to clipboard");
         });
         codeItem.parentElement.prepend(btnElement);
       }
