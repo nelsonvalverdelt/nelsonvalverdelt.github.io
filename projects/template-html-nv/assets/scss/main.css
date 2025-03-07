@@ -10639,7 +10639,7 @@ h6 {
 }
 .form-group > .icon {
   position: absolute;
-  top: 0.4rem;
+  top: 0.5rem;
   color: var(--nv-dark);
 }
 .form-group > .icon.icon-right {
