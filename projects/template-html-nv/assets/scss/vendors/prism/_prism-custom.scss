@@ -3,15 +3,65 @@ pre[class*="language-"] {
   font-family: unset;
   width: 100%;
   border-radius: 7px;
-  background-color: #f1f0f0;
+  background-color: #000;
 }
 
 pre[class*="language-"] {
   display: flex;
   flex-wrap: wrap;
+  border: 0.3em solid var(--nv-muted);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
   > button {
     margin-left: auto;
   }
+}
+
+pre[class*="language-"] code .token.property,
+pre[class*="language-"] code .token.tag,
+pre[class*="language-"] code .token.boolean,
+pre[class*="language-"] code .token.number,
+pre[class*="language-"] code .token.function-name,
+pre[class*="language-"] code .token.constant,
+pre[class*="language-"] code .token.symbol,
+pre[class*="language-"] code .token.deleted {
+  color: #93c5fd;
+}
+
+pre[class*="language-"] code .token.atrule,
+pre[class*="language-"] code .token.attr-value,
+pre[class*="language-"] code .token.keyword,
+pre[class*="language-"] code .token.class-name {
+  color: #bbf7d0;
+}
+
+pre[class*="language-"] code .token.punctuation {
+  color: #bfdbfe;
+}
+
+pre[class*="language-"] code .token.selector,
+pre[class*="language-"] code .token.attr-name,
+pre[class*="language-"] code .token.string,
+pre[class*="language-"] code .token.char,
+pre[class*="language-"] code .token.function,
+pre[class*="language-"] code .token.builtin,
+pre[class*="language-"] code .token.inserted {
+  color: #eff6ff;
+}
+
+pre[class*="language-"] code {
+  box-shadow: none;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 10px;
+  color: #fff;
+  max-height: inherit;
+  height: inherit;
+  padding: 0 1rem;
+  display: block;
+  overflow: auto;
 }
 
 .prism-toast {
