@@ -105,8 +105,10 @@
   --nv-dark-rgb: 75, 75, 75;
   --nv-gray-rgb: 47, 43, 61;
 }
-$menu-width-mobile: 4rem;
-$menu-width-desktop: 20rem;
+
+$menu-minimized: 4rem;
+$menu-maximized: 20rem;
+
 $column-numbers: 12;
 $grid-breakpoints: (
   xs: 0,

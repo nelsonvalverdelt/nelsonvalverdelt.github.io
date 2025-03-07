@@ -5,12 +5,12 @@
   flex-direction: row;
   &:has(> .menu > .menu-header > .menu-header-nav > .action-view-mode > input[type="checkbox"]:checked) {
     > .main-body {
-      margin-left: $menu-width-mobile;
+      margin-left: $menu-minimized;
     }
   }
   > .main-body {
     width: 100%;
-    margin-left: $menu-width-desktop;
+    margin-left: $menu-maximized;
     transition: margin-left 0.25s ease-in-out;
   }
   .container {
