@@ -10471,7 +10471,16 @@ pre[class*=language-] {
   overflow: auto;
 }
 pre[class*=language-] > button {
-  margin-left: auto;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+pre[class*=language-] code .token.cdata,
+pre[class*=language-] code .token.comment,
+pre[class*=language-] code .token.doctype,
+pre[class*=language-] code .token.prolog {
+  color: #e9dc78;
 }
 
 pre[class*=language-] code .token.property,
