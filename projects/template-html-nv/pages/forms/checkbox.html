@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template HTML / SCSS - Checkbox NV</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <link href="/projects/template-html-nv/assets/vendors/prism/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/scss/main.css" />
   </head>
   <body>
@@ -33,34 +33,82 @@
           <div class="card">
             <h4 class="card-header">Basic Checkbox</h4>
             <div class="card-body">
-              <div class="d-flex flex-wrap gap-3">
-                <div class="form-checkbox">
-                  <input placeholder="checkbox" placeholder="checkbox" id="checkbox-1" type="checkbox" />
-                  <label for="checkbox-1"></label>
+              <div id="tab-basic-checkbox" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
                 </div>
-                <div class="form-checkbox primary">
-                  <input placeholder="checkbox" id="checkbox-2" type="checkbox" />
-                  <label for="checkbox-2"></label>
-                </div>
-                <div class="form-checkbox success">
-                  <input placeholder="checkbox" id="checkbox-3" type="checkbox" />
-                  <label for="checkbox-3"></label>
-                </div>
-                <div class="form-checkbox info">
-                  <input placeholder="checkbox" id="checkbox-4" type="checkbox" />
-                  <label for="checkbox-4"></label>
-                </div>
-                <div class="form-checkbox warning">
-                  <input placeholder="checkbox" id="checkbox-5" type="checkbox" />
-                  <label for="checkbox-5"></label>
-                </div>
-                <div class="form-checkbox danger">
-                  <input placeholder="checkbox" id="checkbox-6" type="checkbox" />
-                  <label for="checkbox-6"></label>
-                </div>
-                <div class="form-checkbox secondary">
-                  <input placeholder="checkbox" id="checkbox-7" type="checkbox" />
-                  <label for="checkbox-7"></label>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <div class="px-3">
+                      <div class="d-flex flex-wrap gap-3">
+                        <div class="form-checkbox">
+                          <input placeholder="checkbox" placeholder="checkbox" id="checkbox-1" type="checkbox" />
+                          <label for="checkbox-1"></label>
+                        </div>
+                        <div class="form-checkbox primary">
+                          <input placeholder="checkbox" id="checkbox-2" type="checkbox" />
+                          <label for="checkbox-2"></label>
+                        </div>
+                        <div class="form-checkbox success">
+                          <input placeholder="checkbox" id="checkbox-3" type="checkbox" />
+                          <label for="checkbox-3"></label>
+                        </div>
+                        <div class="form-checkbox info">
+                          <input placeholder="checkbox" id="checkbox-4" type="checkbox" />
+                          <label for="checkbox-4"></label>
+                        </div>
+                        <div class="form-checkbox warning">
+                          <input placeholder="checkbox" id="checkbox-5" type="checkbox" />
+                          <label for="checkbox-5"></label>
+                        </div>
+                        <div class="form-checkbox danger">
+                          <input placeholder="checkbox" id="checkbox-6" type="checkbox" />
+                          <label for="checkbox-6"></label>
+                        </div>
+                        <div class="form-checkbox secondary">
+                          <input placeholder="checkbox" id="checkbox-7" type="checkbox" />
+                          <label for="checkbox-7"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <pre><code class="language-markup">
+  <div class="d-flex flex-wrap gap-3">
+    <div class="form-checkbox">
+      <input placeholder="checkbox" placeholder="checkbox" id="checkbox-1" type="checkbox" />
+      <label for="checkbox-1"></label>
+    </div>
+    <div class="form-checkbox primary">
+      <input placeholder="checkbox" id="checkbox-2" type="checkbox" />
+      <label for="checkbox-2"></label>
+    </div>
+    <div class="form-checkbox success">
+      <input placeholder="checkbox" id="checkbox-3" type="checkbox" />
+      <label for="checkbox-3"></label>
+    </div>
+    <div class="form-checkbox info">
+      <input placeholder="checkbox" id="checkbox-4" type="checkbox" />
+      <label for="checkbox-4"></label>
+    </div>
+    <div class="form-checkbox warning">
+      <input placeholder="checkbox" id="checkbox-5" type="checkbox" />
+      <label for="checkbox-5"></label>
+    </div>
+    <div class="form-checkbox danger">
+      <input placeholder="checkbox" id="checkbox-6" type="checkbox" />
+      <label for="checkbox-6"></label>
+    </div>
+    <div class="form-checkbox secondary">
+      <input placeholder="checkbox" id="checkbox-7" type="checkbox" />
+      <label for="checkbox-7"></label>
+    </div>
+  </div>
+                      </code></pre>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -68,34 +116,82 @@
           <div class="card mt-3">
             <h4 class="card-header">Checkbox - filled</h4>
             <div class="card-body">
-              <div class="d-flex flex-wrap gap-3">
-                <div class="form-checkbox filled">
-                  <input placeholder="checkbox" id="checkbox-filled-1" type="checkbox" />
-                  <label for="checkbox-filled-1"></label>
+              <div id="tab-checkbox-filled" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
                 </div>
-                <div class="form-checkbox primary filled">
-                  <input placeholder="checkbox" id="checkbox-filled-2" type="checkbox" />
-                  <label for="checkbox-filled-2"></label>
-                </div>
-                <div class="form-checkbox success filled">
-                  <input placeholder="checkbox" id="checkbox-filled-3" type="checkbox" />
-                  <label for="checkbox-filled-3"></label>
-                </div>
-                <div class="form-checkbox info filled">
-                  <input placeholder="checkbox" id="checkbox-filled-4" type="checkbox" />
-                  <label for="checkbox-filled-4"></label>
-                </div>
-                <div class="form-checkbox warning filled">
-                  <input placeholder="checkbox" id="checkbox-filled-5" type="checkbox" />
-                  <label for="checkbox-filled-5"></label>
-                </div>
-                <div class="form-checkbox danger filled">
-                  <input placeholder="checkbox" id="checkbox-filled-6" type="checkbox" />
-                  <label for="checkbox-filled-6"></label>
-                </div>
-                <div class="form-checkbox secondary filled">
-                  <input placeholder="checkbox" id="checkbox-filled-7" type="checkbox" />
-                  <label for="checkbox-filled-7"></label>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <div class="px-3">
+                      <div class="d-flex flex-wrap gap-3">
+                        <div class="form-checkbox filled">
+                          <input placeholder="checkbox" id="checkbox-filled-1" type="checkbox" />
+                          <label for="checkbox-filled-1"></label>
+                        </div>
+                        <div class="form-checkbox primary filled">
+                          <input placeholder="checkbox" id="checkbox-filled-2" type="checkbox" />
+                          <label for="checkbox-filled-2"></label>
+                        </div>
+                        <div class="form-checkbox success filled">
+                          <input placeholder="checkbox" id="checkbox-filled-3" type="checkbox" />
+                          <label for="checkbox-filled-3"></label>
+                        </div>
+                        <div class="form-checkbox info filled">
+                          <input placeholder="checkbox" id="checkbox-filled-4" type="checkbox" />
+                          <label for="checkbox-filled-4"></label>
+                        </div>
+                        <div class="form-checkbox warning filled">
+                          <input placeholder="checkbox" id="checkbox-filled-5" type="checkbox" />
+                          <label for="checkbox-filled-5"></label>
+                        </div>
+                        <div class="form-checkbox danger filled">
+                          <input placeholder="checkbox" id="checkbox-filled-6" type="checkbox" />
+                          <label for="checkbox-filled-6"></label>
+                        </div>
+                        <div class="form-checkbox secondary filled">
+                          <input placeholder="checkbox" id="checkbox-filled-7" type="checkbox" />
+                          <label for="checkbox-filled-7"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <pre><code class="language-markup">
+  <div class="d-flex flex-wrap gap-3">
+    <div class="form-checkbox filled">
+      <input placeholder="checkbox" id="checkbox-filled-1" type="checkbox" />
+      <label for="checkbox-filled-1"></label>
+    </div>
+    <div class="form-checkbox primary filled">
+      <input placeholder="checkbox" id="checkbox-filled-2" type="checkbox" />
+      <label for="checkbox-filled-2"></label>
+    </div>
+    <div class="form-checkbox success filled">
+      <input placeholder="checkbox" id="checkbox-filled-3" type="checkbox" />
+      <label for="checkbox-filled-3"></label>
+    </div>
+    <div class="form-checkbox info filled">
+      <input placeholder="checkbox" id="checkbox-filled-4" type="checkbox" />
+      <label for="checkbox-filled-4"></label>
+    </div>
+    <div class="form-checkbox warning filled">
+      <input placeholder="checkbox" id="checkbox-filled-5" type="checkbox" />
+      <label for="checkbox-filled-5"></label>
+    </div>
+    <div class="form-checkbox danger filled">
+      <input placeholder="checkbox" id="checkbox-filled-6" type="checkbox" />
+      <label for="checkbox-filled-6"></label>
+    </div>
+    <div class="form-checkbox secondary filled">
+      <input placeholder="checkbox" id="checkbox-filled-7" type="checkbox" />
+      <label for="checkbox-filled-7"></label>
+    </div>
+  </div>
+                      </code></pre>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -104,7 +200,18 @@
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <!-- Start: Prism -->
+  <script src="/projects/template-html-nv/assets/js/prism/prism.js"></script>
+  <script src="/projects/template-html-nv/assets/js/prism/toast.js"></script>
+  <script src="/projects/template-html-nv/assets/vendors/prism/prism.js"></script>
+  <!-- End: Prism -->
+  <!-- Start: Tabs -->
+  <script src="/projects/template-html-nv/assets/js/tab.js"></script>
+  <!-- End: Tabs-->
   <script src="/projects/template-html-nv/assets/js/menu/menu-route.js"></script>
   <script src="/projects/template-html-nv/assets/js/menu/menu.js" defer></script>
+  <script>
+    fnTab("#tab-basic-checkbox");
+    fnTab("#tab-checkbox-filled");
+  </script>
 </html>

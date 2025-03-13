@@ -221,4 +221,15 @@
 }
 
 @media (max-width: 576px) {
+  .menu {
+    position: fixed;
+    width: 100%;
+    > .menu-header {
+      > .menu-header-nav {
+        > .action-view-mode {
+          display: none;
+        }
+      }
+    }
+  }
 }

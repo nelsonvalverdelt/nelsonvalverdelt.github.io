@@ -11462,6 +11462,15 @@ h6 {
   left: 0;
 }
 
+@media (max-width: 576px) {
+  .menu {
+    position: fixed;
+    width: 100%;
+  }
+  .menu > .menu-header > .menu-header-nav > .action-view-mode {
+    display: none;
+  }
+}
 .tab {
   display: flex;
   flex-wrap: wrap;

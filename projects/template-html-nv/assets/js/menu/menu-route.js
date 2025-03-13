@@ -51,7 +51,7 @@ const menuRoutes = [
         icon: null,
         path: "/projects/template-html-nv/pages/forms/input.html",
         active: false,
-        span: 3,
+        span: 6,
         children: [],
       },
       {
@@ -67,7 +67,7 @@ const menuRoutes = [
         icon: null,
         path: "/projects/template-html-nv/pages/forms/switches.html",
         active: false,
-        span: 2,
+        span: 4,
         children: [],
       },
     ],
