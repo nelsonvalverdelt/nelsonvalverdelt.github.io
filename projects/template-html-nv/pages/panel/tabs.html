@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template HTML / SCSS - Tabs NV</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <link href="/projects/template-html-nv/assets/vendors/prism/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/scss/main.css" />
+    <!-- Favicons -->
+    <link href="../../../../assets/img/favicon.png" rel="icon" />
+    <link href="../../../..//assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
   </head>
   <body>
     <div class="main">
@@ -34,31 +37,81 @@
             <h4 class="card-header">Tab default</h4>
             <div class="card-body">
               <div id="tab" class="tab">
-                <div class="tab-header">
-                  <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
-                  <div id="tab2" class="tab-header-item">Tab 2</div>
-                  <div id="tab3" class="tab-header-item">Tab 3</div>
-                  <div id="tab4" class="tab-header-item">Tab 4</div>
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
                 </div>
                 <div class="tab-body">
                   <div class="tab-body-item tab1 active">
                     <div class="px-3">
-                      <h4>Contenido Tab 1</h4>
+                      <div class="tab">
+                        <div class="tab-header">
+                          <div class="tab-header-item active">Tab Demo 1</div>
+                          <div class="tab-header-item">Tab 2</div>
+                          <div class="tab-header-item">Tab 3</div>
+                          <div class="tab-header-item">Tab 4</div>
+                        </div>
+                        <div class="tab-body">
+                          <div class="tab-body-item active">
+                            <div class="px-3">
+                              <h4>Contenido Tab 1</h4>
+                            </div>
+                          </div>
+                          <div class="tab-body-item">
+                            <div class="px-3">
+                              <h4>Contenido Tab 2</h4>
+                            </div>
+                          </div>
+                          <div class="tab-body-item">
+                            <div class="px-3">
+                              <h4>Contenido Tab 3</h4>
+                            </div>
+                          </div>
+                          <div class="tab-body-item">
+                            <div class="px-3">
+                              <h4>Contenido Tab 4</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="tab-body-item tab2">
                     <div class="px-3">
-                      <h4>Contenido Tab 2</h4>
-                    </div>
-                  </div>
-                  <div class="tab-body-item tab3">
-                    <div class="px-3">
-                      <h4>Contenido Tab 3</h4>
-                    </div>
-                  </div>
-                  <div class="tab-body-item tab4">
-                    <div class="px-3">
-                      <h4>Contenido Tab 4</h4>
+                      <pre><code class="language-markup">
+<div class="px-3">
+  <div class="tab">
+    <div class="tab-header">
+      <div class="tab-header-item active">Tab Demo 1</div>
+      <div class="tab-header-item">Tab 2</div>
+      <div class="tab-header-item">Tab 3</div>
+      <div class="tab-header-item">Tab 4</div>
+    </div>
+    <div class="tab-body">
+      <div class="tab-body-item active">
+        <div class="px-3">
+          <h4>Contenido Tab 1</h4>
+        </div>
+      </div>
+      <div class="tab-body-item">
+        <div class="px-3">
+          <h4>Contenido Tab 2</h4>
+        </div>
+      </div>
+      <div class="tab-body-item">
+        <div class="px-3">
+          <h4>Contenido Tab 3</h4>
+        </div>
+      </div>
+      <div class="tab-body-item">
+        <div class="px-3">
+          <h4>Contenido Tab 4</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                        
+                      </code></pre>
                     </div>
                   </div>
                 </div>
@@ -174,10 +227,16 @@
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <!-- Start: Prism -->
+  <script src="/projects/template-html-nv/assets/js/prism/prism.js"></script>
+  <script src="/projects/template-html-nv/assets/js/prism/toast.js"></script>
+  <script src="/projects/template-html-nv/assets/vendors/prism/prism.js"></script>
+  <!-- End: Prism -->
+  <!-- Start: Tabs -->
+  <script src="/projects/template-html-nv/assets/js/tab.js"></script>
+  <!-- End: Tabs-->
   <script src="/projects/template-html-nv/assets/js/menu/menu-route.js" defer></script>
   <script src="/projects/template-html-nv/assets/js/menu/menu.js" defer></script>
-  <script src="/projects/template-html-nv/assets/js/tab.js"></script>
   <script>
     fnTab("#tab");
     fnTab("#tab-line");
