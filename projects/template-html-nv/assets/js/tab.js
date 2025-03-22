@@ -15,20 +15,19 @@ function fnTab(tabId) {
     activeHeaderTab: (tabHeaderItem) => {
       tabHeaderItem.classList.add("active");
     },
-    activeBodyTabById: (tabContent, tabHeaderItemId) => {
-      const tabBodyItem = tabContent.querySelector(`.tab-body > .tab-body-item.${tabHeaderItemId}`);
+    activeBodyTabById: (tabHeaderItemId) => {
+      const tabBodyItem = document.querySelector(`${tabId} > .tab-body > .tab-body-item.${tabHeaderItemId}`);
       tabBodyItem.classList.add("active");
     },
     initTab: () => {
-      const tabContent = document.querySelector(tabId);
-      const tabHeaderItems = tabContent.querySelectorAll(".tab-header > .tab-header-item");
-      const tabBodyItems = tabContent.querySelectorAll(".tab-body > .tab-body-item");
+      const tabHeaderItems = document.querySelectorAll(`${tabId} > .tab-header > .tab-header-item`);
+      const tabBodyItems = document.querySelectorAll(`${tabId} > .tab-body > .tab-body-item`);
       for (const tabHeaderItem of tabHeaderItems) {
         tabHeaderItem.addEventListener("click", () => {
           fn.resetTabHeaderActiveTabs(tabHeaderItems);
           fn.resetTabBodyActiveTabs(tabBodyItems);
           fn.activeHeaderTab(tabHeaderItem);
-          fn.activeBodyTabById(tabContent, tabHeaderItem.id);
+          fn.activeBodyTabById(tabHeaderItem.id);
         });
       }
     },
