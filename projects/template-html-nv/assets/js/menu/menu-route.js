@@ -1,11 +1,20 @@
 const menuRoutes = [
   {
-    name: "Home",
+    name: "Getting Started",
     icon: "bi-house",
     path: null,
-    active: false,
+    active: true,
     span: null,
-    children: [],
+    children: [
+      {
+        name: "Installation",
+        icon: null,
+        path: "/projects/template-html-nv/pages/started/index.html",
+        active: false,
+        span: null,
+        children: [],
+      },
+    ],
   },
   {
     name: "Dashboard",
