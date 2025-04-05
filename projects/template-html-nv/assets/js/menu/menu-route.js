@@ -17,14 +17,6 @@ const menuRoutes = [
     ],
   },
   {
-    name: "Dashboard",
-    icon: "bi-bar-chart-line",
-    path: null,
-    active: false,
-    span: null,
-    children: [],
-  },
-  {
     name: "Forms",
     icon: "bi-columns",
     path: null,
@@ -78,6 +70,23 @@ const menuRoutes = [
         active: false,
         span: 4,
         children: [],
+      },
+      {
+        name: "Tables",
+        icon: null,
+        path: null,
+        active: false,
+        span: 2,
+        children: [
+          {
+            name: "Basic",
+            icon: null,
+            path: "/projects/template-html-nv/pages/forms/tables/basic.html",
+            active: false,
+            span: 2,
+            children: [],
+          },
+        ],
       },
     ],
   },
