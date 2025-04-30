@@ -8,7 +8,7 @@
     width: var(--nv-radio-size);
     border: var(--nv-control-border-width) solid var(--nv-control-color);
     border-radius: var(--nv-radio-border-radius);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     box-shadow: var(--nv-control-box-shadow);

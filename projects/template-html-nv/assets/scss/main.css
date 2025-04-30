@@ -37,12 +37,12 @@
   --nv-switch-line-width: 2.1rem;
   --nv-switch-line-height: 0.75rem;
   --nv-switch-line-height-2: 0.25rem;
-  --nv-checkbox-size: 1.25rem;
-  --nv-checkbox-check-size: 1.25rem;
+  --nv-checkbox-size: 20px;
+  --nv-checkbox-check-size: 20px;
   --nv-radio-border-radius: 1.25rem;
-  --nv-radio-size: 1.25rem;
-  --nv-radio-check-size: 0.75rem;
-  --nv-radio-check-filled-size: 0.5rem;
+  --nv-radio-size: 20px;
+  --nv-radio-check-size: 12px;
+  --nv-radio-check-filled-size: 8px;
   --nv-radio-check-radius: 50%;
   --nv-card-border-radius: 0.75rem;
   --nv-card-padding: 1.5rem;
@@ -12079,7 +12079,7 @@ h6 {
   width: var(--nv-radio-size);
   border: var(--nv-control-border-width) solid var(--nv-control-color);
   border-radius: var(--nv-radio-border-radius);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   box-shadow: var(--nv-control-box-shadow);
