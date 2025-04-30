@@ -6,6 +6,7 @@
 
 //Utilities
 @import "./utilities/spacing";
+@import "./utilities/align";
 
 //Vendors
 @import "./vendors/bootstrap-icons/bootstrap-icons";
@@ -35,6 +36,7 @@
 @import "./components/switch";
 @import "./components/checkbox";
 @import "./components/radio";
+@import "./components/table";
 //Pages
 @import "./pages/home";
 //Themes

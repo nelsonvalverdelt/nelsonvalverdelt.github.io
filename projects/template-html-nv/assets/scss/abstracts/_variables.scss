@@ -62,8 +62,16 @@
   --nv-tabs-body: 1.5rem 0;
   --nv-tabs-item-box-shadow: 0 -0.5px 0 0.5px var(--nv-muted);
   --nv-tabs-body-box-shadow: 0 0 0.5px 0.5px var(--nv-muted);
-
   --nv-tabs-curved-padding-item: 4rem;
+
+  //Table
+  --nv-table-row-box-shadow: 0 0 3px 0 var(--nv-muted);
+  --nv-table-cell-padding: .5rem 0;
+  --nv-table-cell-margin: .5rem 0;
+  --nv-table-td-padding: 0 .5rem;
+  --nv-table-th-padding: 0 .5rem;
+  --nv-table-bg-striped: #f5f5f5;
+  --nv-table-bg-hover: #f5f5f5;
 }
 :root,
 [data-theme="light"] {

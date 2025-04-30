@@ -1,0 +1,89 @@
+.table {
+  width: 100%;
+  > thead {
+    > tr {
+      > th {
+        padding: var(--nv-table-th-padding);
+        > .cell {
+          display: flex;
+          height: 100%;
+          align-items: center;
+          padding: var(--nv-table-cell-padding);
+          margin: var(--nv-table-cell-margin);
+          &:hover {
+            > .btn-order {
+              opacity: 1;
+            }
+          }
+          > .btn-order {
+            opacity: 0;
+            cursor: pointer;
+            background-color: transparent;
+            border: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.35s ease-in-out;
+            > em {
+              font-size: 1.5rem;
+              color: var(--nv-dark);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > tbody {
+    > tr {
+      box-shadow: var(--nv-table-row-box-shadow);
+      > td {
+        padding: var(--nv-table-td-padding);
+        > .cell-body {
+          width: 100%;
+          display: inline-flex;
+          padding: var(--nv-table-cell-padding);
+          margin: var(--nv-table-cell-margin);
+          > .cell {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  &.table-striped {
+    > tbody {
+      > tr {
+        &:nth-child(odd) {
+          background-color: var(--nv-table-bg-striped);
+        }
+      }
+    }
+  }
+  &.table-hover {
+    > tbody {
+      > tr:hover {
+        background-color: var(--nv-table-bg-hover);
+      }
+    }
+  }
+}
+
+.cell-center {
+  justify-content: center;
+  > .cell-body {
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+
+.cell-left {
+  text-align: left;
+  > .cell-body {
+    display: inline-flex;
+    justify-content: left;
+  }
+}

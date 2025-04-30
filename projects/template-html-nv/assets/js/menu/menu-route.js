@@ -81,7 +81,7 @@ const menuRoutes = [
           {
             name: "Basic",
             icon: null,
-            path: "/projects/template-html-nv/pages/forms/tables/basic.html",
+            path: "/projects/template-html-nv/pages/tables/basic.html",
             active: false,
             span: 2,
             children: [],
