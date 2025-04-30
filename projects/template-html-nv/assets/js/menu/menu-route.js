@@ -34,7 +34,7 @@ const menuRoutes = [
       {
         name: "Buttons",
         icon: null,
-        path: "/projects/template-html-nv/pages/forms/buttons.html",
+        path: "/projects/template-html-nv/pages/components/buttons.html",
         active: false,
         span: 6,
         children: [],
@@ -42,7 +42,7 @@ const menuRoutes = [
       {
         name: "Checkbox",
         icon: null,
-        path: "/projects/template-html-nv/pages/forms/checkbox.html",
+        path: "/projects/template-html-nv/pages/components/checkbox.html",
         active: false,
         span: 2,
         children: [],
@@ -50,7 +50,7 @@ const menuRoutes = [
       {
         name: "Input",
         icon: null,
-        path: "/projects/template-html-nv/pages/forms/input.html",
+        path: "/projects/template-html-nv/pages/components/input.html",
         active: false,
         span: 6,
         children: [],
@@ -58,7 +58,7 @@ const menuRoutes = [
       {
         name: "Radio",
         icon: null,
-        path: "/projects/template-html-nv/pages/forms/radio.html",
+        path: "/projects/template-html-nv/pages/components/radio.html",
         active: false,
         span: 2,
         children: [],
@@ -66,7 +66,7 @@ const menuRoutes = [
       {
         name: "Switch",
         icon: null,
-        path: "/projects/template-html-nv/pages/forms/switches.html",
+        path: "/projects/template-html-nv/pages/components/switches.html",
         active: false,
         span: 4,
         children: [],
@@ -81,7 +81,7 @@ const menuRoutes = [
           {
             name: "Basic",
             icon: null,
-            path: "/projects/template-html-nv/pages/tables/basic.html",
+            path: "/projects/template-html-nv/pages/components/tables/basic.html",
             active: false,
             span: 2,
             children: [],
