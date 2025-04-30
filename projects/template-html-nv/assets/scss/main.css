@@ -39,7 +39,8 @@
   --nv-switch-line-height-2: 0.25rem;
   --nv-checkbox-size: 20px;
   --nv-checkbox-check-size: 20px;
-  --nv-radio-border-radius: 1.25rem;
+  --nv-checkbox-border-radius: 20px;
+  --nv-radio-border-radius: 20px;
   --nv-radio-size: 20px;
   --nv-radio-check-size: 12px;
   --nv-radio-check-filled-size: 8px;
@@ -11991,6 +11992,9 @@ h6 {
   align-items: center;
   justify-content: center;
   box-shadow: var(--nv-control-box-shadow);
+}
+.form-checkbox.rounded > label {
+  border-radius: var(--nv-checkbox-border-radius);
 }
 .form-checkbox:has(> input[type=checkbox]:checked) > label::before {
   font-family: "bootstrap-icons";
