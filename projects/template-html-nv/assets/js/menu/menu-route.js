@@ -75,7 +75,7 @@ const menuRoutes = [
         name: "Tables",
         icon: null,
         path: null,
-        active: false,
+        active: true,
         span: 2,
         children: [
           {
@@ -83,7 +83,23 @@ const menuRoutes = [
             icon: null,
             path: "/projects/template-html-nv/pages/components/tables/basic.html",
             active: false,
-            span: 2,
+            span: null,
+            children: [],
+          },
+          {
+            name: "Checkbox",
+            icon: null,
+            path: "/projects/template-html-nv/pages/components/tables/checkbox.html",
+            active: false,
+            span: null,
+            children: [],
+          },
+          {
+            name: "Reorder",
+            icon: null,
+            path: "/projects/template-html-nv/pages/components/tables/reorder.html",
+            active: false,
+            span: null,
             children: [],
           },
         ],
