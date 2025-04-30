@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template HTML / SCSS - Table row expansion NV</title>
+    <link href="/projects/template-html-nv/assets/vendors/prism/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../assets/scss/main.css" />
+    <!-- Favicons -->
+    <link href="../../../../../assets/img/favicon.png" rel="icon" />
+    <link href="../../../../..//assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="menu">
+        <div class="menu-header">
+          <div class="menu-header-nav">
+            <div class="logo"></div>
+            <div class="action-view-mode">
+              <input id="view-mode" type="checkbox" placeholder="view-mode" />
+              <label for="view-mode"></label>
+            </div>
+          </div>
+          <div class="search mt-4">
+            <input id="search" type="text" placeholder="Search" />
+            <label for="search" class="bi-search"></label>
+          </div>
+        </div>
+        <div class="my-2">
+          <div class="line-vertical"></div>
+        </div>
+        <div class="menu-body"></div>
+      </div>
+      <div class="main-body">
+        <div class="container">
+          <div class="card">
+            <h4 class="card-header">Row expansion</h4>
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">
+                      <div class="cell cell-center">ID</div>
+                    </th>
+                    <th scope="col">
+                      <div class="cell cell-left">
+                        NAME
+                        <button class="btn-order"><em class="bi-arrow-down-short"></em></button>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="cell cell-left">
+                        LASTNAME
+                        <button class="btn-order"><em class="bi-arrow-down-short"></em></button>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="cell cell-left">
+                        EMAIL
+                        <button class="btn-order"><em class="bi-arrow-down-short"></em></button>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="cell cell-left">
+                        PHONE
+                        <button class="btn-order"><em class="bi-arrow-down-short"></em></button>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="cell cell-left">
+                        STATUS
+                        <button class="btn-order"><em class="bi-arrow-down-short"></em></button>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="cell-center">
+                      <button class="btn-expand">
+                        <em class="icon bi-chevron-down"></em>
+                      </button>
+                    </td>
+                    <td class="cell-center">
+                      <div class="cell-body">
+                        <div class="cell">1</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">Nelson H.</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">Valverde La Torre</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">nelsonvalverdelt@outlook.com</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">+51 923238397</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">
+                          <span>Active</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="7" class="row-expansion">
+                      <div class="row-expansion-body">
+                        <h4 class="title">User detail</h4>
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th scope="col">
+                                <div class="cell cell-center">
+                                  ROLE
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="cell cell-center">
+                                  DOCUMENT TYPE
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="cell cell-center">
+                                  NRO DOCUMENT
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="cell cell-center">
+                                  REGISTER
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="cell cell-center">
+                                  LAST ACCESS
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="cell-center">
+                                <div class="cell-body">
+                                  <div class="cell">User</div>
+                                </div>
+                              </td>
+                              <td class="cell-center">
+                                <div class="cell-body">
+                                  <div class="cell">DNI</div>
+                                </div>
+                              </td>
+                              <td class="cell-center">
+                                <div class="cell-body"><div class="cell">12345678</div></div>
+                              </td>
+                              <td class="cell-center">
+                                <div class="cell-body"><div class="cell">12/04/2025</div></div>
+                              </td>
+                              <td class="cell-center">
+                                <div class="cell-body"><div class="cell">30/04/2025</div></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cell-center">
+                      <button class="btn-expand">
+                        <em class="bi-chevron-right"></em>
+                      </button>
+                    </td>
+                    <td class="cell-center">
+                      <div class="cell-body">
+                        <div class="cell">2</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">Nelson H.</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">Valverde La Torre</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">nelsonvalverdelt@outlook.com</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">+51 923238397</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">
+                          <span>Active</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cell-center">
+                      <button class="btn-expand">
+                        <em class="bi-chevron-right"></em>
+                      </button>
+                    </td>
+                    <td class="cell-center">
+                      <div class="cell-body">
+                        <div class="cell">3</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">Nelson H.</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">Valverde La Torre</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">nelsonvalverdelt@outlook.com</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">+51 923238397</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">
+                          <span>Active</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cell-center">
+                      <button class="btn-expand">
+                        <em class="bi-chevron-right"></em>
+                      </button>
+                    </td>
+                    <td class="cell-center">
+                      <div class="cell-body">
+                        <div class="cell">4</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">Nelson H.</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">Valverde La Torre</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">nelsonvalverdelt@outlook.com</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">+51 923238397</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">
+                          <span>Active</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cell-center">
+                      <button class="btn-expand">
+                        <em class="bi-chevron-right"></em>
+                      </button>
+                    </td>
+                    <td class="cell-center">
+                      <div class="cell-body">
+                        <div class="cell">5</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">Nelson H.</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">Valverde La Torre</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">nelsonvalverdelt@outlook.com</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">+51 923238397</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">
+                          <span>Active</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cell-center">
+                      <button class="btn-expand">
+                        <em class="bi-chevron-right"></em>
+                      </button>
+                    </td>
+                    <td class="cell-center">
+                      <div class="cell-body">
+                        <div class="cell">6</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">Nelson H.</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">Valverde La Torre</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">nelsonvalverdelt@outlook.com</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">+51 923238397</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">
+                          <span>Active</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cell-center">
+                      <button class="btn-expand">
+                        <em class="bi-chevron-right"></em>
+                      </button>
+                    </td>
+                    <td class="cell-center">
+                      <div class="cell-body">
+                        <div class="cell">7</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">Nelson H.</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">Valverde La Torre</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">nelsonvalverdelt@outlook.com</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">+51 923238397</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">
+                          <span>Active</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cell-center">
+                      <button class="btn-expand">
+                        <em class="bi-chevron-right"></em>
+                      </button>
+                    </td>
+                    <td class="cell-center">
+                      <div class="cell-body">
+                        <div class="cell">8</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">Nelson H.</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">Valverde La Torre</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">nelsonvalverdelt@outlook.com</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">+51 923238397</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">
+                          <span>Active</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cell-center">
+                      <button class="btn-expand">
+                        <em class="bi-chevron-right"></em>
+                      </button>
+                    </td>
+                    <td class="cell-center">
+                      <div class="cell-body">
+                        <div class="cell">9</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">Nelson H.</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">Valverde La Torre</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">nelsonvalverdelt@outlook.com</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">+51 923238397</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">
+                          <span>Active</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="cell-center">
+                      <button class="btn-expand">
+                        <em class="bi-chevron-right"></em>
+                      </button>
+                    </td>
+                    <td class="cell-center">
+                      <div class="cell-body">
+                        <div class="cell">10</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">Nelson H.</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">Valverde La Torre</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">nelsonvalverdelt@outlook.com</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body"><div class="cell">+51 923238397</div></div>
+                    </td>
+                    <td>
+                      <div class="cell-body">
+                        <div class="cell">
+                          <span>Active</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Start: Prism -->
+  <script src="/projects/template-html-nv/assets/js/prism/prism.js"></script>
+  <script src="/projects/template-html-nv/assets/js/prism/toast.js"></script>
+  <script src="/projects/template-html-nv/assets/vendors/prism/prism.js"></script>
+  <!-- End: Prism -->
+  <!-- Start: Tabs -->
+  <script src="/projects/template-html-nv/assets/js/tab.js"></script>
+  <!-- End: Tabs-->
+  <script src="/projects/template-html-nv/assets/js/menu/menu-route.js"></script>
+  <script src="/projects/template-html-nv/assets/js/menu/menu.js" defer></script>
+  <script>
+    fnTab("#tab-basic-card");
+  </script>
+</html>

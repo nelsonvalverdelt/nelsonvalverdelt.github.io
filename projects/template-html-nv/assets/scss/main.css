@@ -12194,6 +12194,11 @@ h6 {
 .table > tbody > tr > td {
   padding: var(--nv-table-td-padding);
 }
+.table > tbody > tr > td > .btn-expand {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
 .table > tbody > tr > td > .cell-body {
   width: 100%;
   display: inline-flex;
@@ -12205,6 +12210,9 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+.table > tbody > tr > .row-expansion {
+  padding: 1.75rem 2rem;
+}
 .table.table-striped > tbody > tr:nth-child(odd) {
   background-color: var(--nv-table-bg-striped);
 }
@@ -12214,6 +12222,7 @@ h6 {
 
 .cell-center {
   justify-content: center;
+  text-align: center;
 }
 .cell-center > .cell-body {
   display: inline-flex;
@@ -12222,6 +12231,7 @@ h6 {
 
 .cell-left {
   text-align: left;
+  justify-content: left;
 }
 .cell-left > .cell-body {
   display: inline-flex;
