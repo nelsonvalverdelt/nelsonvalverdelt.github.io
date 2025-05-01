@@ -65,7 +65,7 @@
   --nv-tabs-body-box-shadow: 0 0 0.5px 0.5px var(--nv-muted);
   --nv-tabs-curved-padding-item: 4rem;
 
-  //Table
+  //table
   --nv-table-row-box-shadow: 0 0 3px 0 var(--nv-muted);
   --nv-table-cell-padding: .5rem 0;
   --nv-table-cell-margin: .5rem 0;
@@ -73,6 +73,18 @@
   --nv-table-th-padding: 0 .5rem;
   --nv-table-bg-striped: #f5f5f5;
   --nv-table-bg-hover: #f5f5f5;
+
+  //listbox
+  --nv-listbox-padding: 0.5rem;
+  --nv-listbox-border: 1px solid var(--nv-muted);
+  --nv-listbox-radius: 6px;
+  --nv-listbox-max-width: 200px;
+  --nv-listbox-gap: 0.5rem;
+  --nv-listbox-item-padding: 0.15rem 0.5rem;
+  --nv-listbox-item-icon: 17px;
+  --nv-listbox-item-icon-span-spacing: 0.5rem;
+  --nv-listbox-checkmark-item-padding: 1.5rem;
+  --nv-listbox-filter-height: 34px;
 }
 :root,
 [data-theme="light"] {
@@ -101,8 +113,10 @@
   --nv-light: #dfdfe3;
   --nv-light-2: #f0f0f0;
   --nv-dark: #4b4b4b;
+  --nv-placeholder: rgba(136, 136, 136, 0.3);
   --nv-primary-shadow: rgba(33, 70, 116, 0.3);
   --nv-muted: rgba(136, 136, 136, 0.2);
+  --nv-muted-light: rgba(136, 136, 136, 0.05);
   --nv-placeholder: rgba(136, 136, 136, 0.5);
   --nv-primary-rgb: 33, 70, 116;
   --nv-secondary-rgb: 128, 131, 144;

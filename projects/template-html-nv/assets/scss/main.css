@@ -62,6 +62,16 @@
   --nv-table-th-padding: 0 .5rem;
   --nv-table-bg-striped: #f5f5f5;
   --nv-table-bg-hover: #f5f5f5;
+  --nv-listbox-padding: 0.5rem;
+  --nv-listbox-border: 1px solid var(--nv-muted);
+  --nv-listbox-radius: 6px;
+  --nv-listbox-max-width: 200px;
+  --nv-listbox-gap: 0.5rem;
+  --nv-listbox-item-padding: 0.15rem 0.5rem;
+  --nv-listbox-item-icon: 17px;
+  --nv-listbox-item-icon-span-spacing: 0.5rem;
+  --nv-listbox-checkmark-item-padding: 1.5rem;
+  --nv-listbox-filter-height: 34px;
 }
 
 :root,
@@ -91,8 +101,10 @@
   --nv-light: #dfdfe3;
   --nv-light-2: #f0f0f0;
   --nv-dark: #4b4b4b;
+  --nv-placeholder: rgba(136, 136, 136, 0.3);
   --nv-primary-shadow: rgba(33, 70, 116, 0.3);
   --nv-muted: rgba(136, 136, 136, 0.2);
+  --nv-muted-light: rgba(136, 136, 136, 0.05);
   --nv-placeholder: rgba(136, 136, 136, 0.5);
   --nv-primary-rgb: 33, 70, 116;
   --nv-secondary-rgb: 128, 131, 144;
@@ -12236,6 +12248,70 @@ h6 {
 .cell-left > .cell-body {
   display: inline-flex;
   justify-content: left;
+}
+
+.listbox {
+  display: flex;
+  flex-direction: column;
+  padding: var(--nv-listbox-padding);
+  border: var(--nv-listbox-border);
+  border-radius: var(--nv-listbox-radius);
+  max-width: var(--nv-listbox-max-width);
+  gap: var(--nv-listbox-gap);
+}
+.listbox > .input-filter {
+  position: relative;
+}
+.listbox > .input-filter > input {
+  border-radius: var(--nv-listbox-radius);
+  outline: none;
+  border: var(--nv-listbox-border);
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 30px;
+  height: var(--nv-listbox-filter-height);
+}
+.listbox > .input-filter > input:focus {
+  border-color: var(--nv-dark);
+}
+.listbox > .input-filter > .search {
+  position: absolute;
+  color: var(--nv-placeholder);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+.listbox > .listbox-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--nv-listbox-gap);
+}
+.listbox > .listbox-items > .item {
+  cursor: pointer;
+  padding: var(--nv-listbox-item-padding);
+}
+.listbox > .listbox-items > .item:hover {
+  background-color: var(--nv-muted-light);
+  border-radius: var(--nv-listbox-radius);
+}
+.listbox.checkmark > .listbox-items > .item {
+  display: flex;
+  align-items: center;
+}
+.listbox.checkmark > .listbox-items > .item:not(:has(> .active)) {
+  padding-left: calc(var(--nv-listbox-checkmark-item-padding) + var(--nv-listbox-item-icon-span-spacing));
+}
+.listbox.checkmark > .listbox-items > .item > .active {
+  font-size: var(--nv-listbox-item-icon);
+  margin-right: var(--nv-listbox-item-icon-span-spacing);
+}
+.listbox.checkbox > .listbox-items > .item {
+  display: flex;
+  align-items: center;
+}
+.listbox.checkbox > .listbox-items > .item > span {
+  margin-left: var(--nv-listbox-item-icon-span-spacing);
 }
 
 .main {

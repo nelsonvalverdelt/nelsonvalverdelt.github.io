@@ -72,6 +72,14 @@ const menuRoutes = [
         children: [],
       },
       {
+        name: "Listbox",
+        icon: null,
+        path: "/projects/template-html-nv/pages/components/listbox.html",
+        active: false,
+        span: 4,
+        children: [],
+      },
+      {
         name: "Tables",
         icon: null,
         path: null,

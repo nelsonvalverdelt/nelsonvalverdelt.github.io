@@ -1,0 +1,73 @@
+$icon-span-spacing: var(--nv-listbox-item-icon-span-spacing);
+.listbox {
+  display: flex;
+  flex-direction: column;
+  padding: var(--nv-listbox-padding);
+  border: var(--nv-listbox-border);
+  border-radius: var(--nv-listbox-radius);
+  max-width: var(--nv-listbox-max-width);
+  gap: var(--nv-listbox-gap);
+  > .input-filter {
+    position: relative;
+    > input {
+      border-radius: var(--nv-listbox-radius);
+      outline: none;
+      border: var(--nv-listbox-border);
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 30px;
+      height: var(--nv-listbox-filter-height);
+      &:focus {
+        border-color: var(--nv-dark);
+      }
+    }
+    > .search {
+      position: absolute;
+      color: var(--nv-placeholder);
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+    }
+  }
+  > .listbox-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--nv-listbox-gap);
+    > .item {
+      cursor: pointer;
+      padding: var(--nv-listbox-item-padding);
+      &:hover {
+        background-color: var(--nv-muted-light);
+        border-radius: var(--nv-listbox-radius);
+      }
+    }
+  }
+  &.checkmark {
+    > .listbox-items {
+      > .item {
+        display: flex;
+        align-items: center;
+        &:not(:has(> .active)) {
+          padding-left: calc(var(--nv-listbox-checkmark-item-padding) + $icon-span-spacing);
+        }
+        > .active {
+          font-size: var(--nv-listbox-item-icon);
+          margin-right: $icon-span-spacing;
+        }
+      }
+    }
+  }
+
+  &.checkbox {
+    > .listbox-items {
+      > .item {
+        display: flex;
+        align-items: center;
+        > span {
+          margin-left: $icon-span-spacing;
+        }
+      }
+    }
+  }
+}
