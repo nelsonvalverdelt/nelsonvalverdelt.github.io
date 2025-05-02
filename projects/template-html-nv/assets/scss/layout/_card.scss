@@ -2,6 +2,8 @@
   border-radius: var(--nv-card-border-radius);
   box-shadow: var(--nv-card-box-shadow);
   > .card-header {
+    font-family: "Font-Medium";
+    font-size: var(--nv-control-font-size);
     padding-top: var(--nv-card-padding);
     padding-right: var(--nv-card-padding);
     padding-left: var(--nv-card-padding);

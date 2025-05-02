@@ -10,6 +10,8 @@
           align-items: center;
           padding: var(--nv-table-cell-padding);
           margin: var(--nv-table-cell-margin);
+          font-family: "Font-Regular";
+          font-size: var(--nv-control-font-size);
           &:hover {
             > .btn-order {
               opacity: 1;
@@ -39,7 +41,7 @@
       box-shadow: var(--nv-table-row-box-shadow);
       > td {
         padding: var(--nv-table-td-padding);
-        >.btn-expand{
+        > .btn-expand {
           background-color: transparent;
           border: 0;
           cursor: pointer;
@@ -53,15 +55,15 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
+            font-family: "Font-Regular";
+            font-size: var(--nv-control-font-size);
           }
         }
-        
       }
-      >.row-expansion{
+      > .row-expansion {
         padding: 1.75rem 2rem;
       }
     }
-   
   }
 
   &.table-striped {

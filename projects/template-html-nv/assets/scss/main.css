@@ -64,7 +64,7 @@
   --nv-table-bg-hover: #f5f5f5;
   --nv-listbox-padding: 0.5rem;
   --nv-listbox-border: 1px solid var(--nv-muted);
-  --nv-listbox-radius: 6px;
+  --nv-listbox-radius: 0.35rem;
   --nv-listbox-max-width: 200px;
   --nv-listbox-gap: 0.5rem;
   --nv-listbox-item-padding: 0.15rem 0.5rem;
@@ -72,6 +72,8 @@
   --nv-listbox-item-icon-span-spacing: 0.5rem;
   --nv-listbox-checkmark-item-padding: 1.5rem;
   --nv-listbox-filter-height: 34px;
+  --nv-tag-padding: 0.25rem 0.5rem;
+  --nv-tag-radius: 0.25rem;
 }
 
 :root,
@@ -10587,8 +10589,6 @@ pre[class*=language-] code {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Font-Light";
-  font-style: normal;
 }
 
 label,
@@ -11272,6 +11272,8 @@ h6 {
   box-shadow: var(--nv-card-box-shadow);
 }
 .card > .card-header {
+  font-family: "Font-Medium";
+  font-size: var(--nv-control-font-size);
   padding-top: var(--nv-card-padding);
   padding-right: var(--nv-card-padding);
   padding-left: var(--nv-card-padding);
@@ -11516,7 +11518,6 @@ h6 {
 }
 .tab > .tab-header > .tab-header-item {
   display: flex;
-  font-family: "Font-Medium";
   cursor: pointer;
   padding: var(--nv-tabs-padding-item);
   border-top-right-radius: var(--nv-tabs-border-radius);
@@ -11524,6 +11525,8 @@ h6 {
   box-shadow: var(--nv-tabs-item-box-shadow);
   background-color: rgba(var(--nv-primary-rgb), 0.1);
   white-space: nowrap;
+  font-family: "Font-Medium";
+  font-size: var(--nv-control-font-size);
 }
 .tab > .tab-header > .tab-header-item.active {
   background-color: var(--nv-white);
@@ -11534,7 +11537,6 @@ h6 {
 }
 .tab > .tab-header.line > .tab-header-item.active {
   color: var(--nv-primary);
-  font-family: "Font-Medium";
 }
 .tab > .tab-header.line > .tab-header-item.active::after {
   content: "";
@@ -11585,7 +11587,7 @@ h6 {
   padding: var(--nv-btn-padding);
   box-shadow: var(--nv-control-box-shadow);
   cursor: pointer;
-  font-family: "Font-Medium";
+  font-family: "Font-Regular";
   font-size: var(--nv-control-font-size);
   transition: background-color var(--nv-control-transition-timer) ease-in-out;
 }
@@ -11703,16 +11705,14 @@ h6 {
   display: block;
   margin-top: 0.25rem;
   line-height: 1rem;
+  font-family: "Font-Regular";
+  font-size: var(--nv-control-font-size);
 }
 .form-input::-moz-placeholder {
   color: var(--nv-placeholder);
-  font-family: "Font-Medium";
-  font-size: var(--nv-control-font-size);
 }
 .form-input::placeholder {
   color: var(--nv-placeholder);
-  font-family: "Font-Medium";
-  font-size: var(--nv-control-font-size);
 }
 .form-input:hover, .form-input:focus {
   border-width: var(--nv-control-border-width-hover);
@@ -12182,6 +12182,8 @@ h6 {
   align-items: center;
   padding: var(--nv-table-cell-padding);
   margin: var(--nv-table-cell-margin);
+  font-family: "Font-Regular";
+  font-size: var(--nv-control-font-size);
 }
 .table > thead > tr > th > .cell:hover > .btn-order {
   opacity: 1;
@@ -12221,6 +12223,8 @@ h6 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Font-Regular";
+  font-size: var(--nv-control-font-size);
 }
 .table > tbody > tr > .row-expansion {
   padding: 1.75rem 2rem;
@@ -12270,6 +12274,8 @@ h6 {
   padding-left: 10px;
   padding-right: 30px;
   height: var(--nv-listbox-filter-height);
+  font-family: "Font-Medium";
+  font-size: var(--nv-control-font-size);
 }
 .listbox > .input-filter > input:focus {
   border-color: var(--nv-dark);
@@ -12289,6 +12295,8 @@ h6 {
 }
 .listbox > .listbox-items > .item {
   cursor: pointer;
+  font-family: "Font-Regular";
+  font-size: var(--nv-control-font-size);
   padding: var(--nv-listbox-item-padding);
 }
 .listbox > .listbox-items > .item:hover {
@@ -12312,6 +12320,38 @@ h6 {
 }
 .listbox.checkbox > .listbox-items > .item > span {
   margin-left: var(--nv-listbox-item-icon-span-spacing);
+}
+
+.tag {
+  padding: var(--nv-tag-padding);
+  display: inline-flex;
+  border-radius: var(--nv-tag-radius);
+  font-size: 12px;
+  font-family: "Font-Bold";
+}
+.tag.tag-primary {
+  background-color: var(--nv-primary);
+  color: var(--nv-white);
+}
+.tag.tag-success {
+  background-color: var(--nv-success);
+  color: var(--nv-white);
+}
+.tag.tag-info {
+  background-color: var(--nv-info);
+  color: var(--nv-white);
+}
+.tag.tag-warning {
+  background-color: var(--nv-warning);
+  color: var(--nv-white);
+}
+.tag.tag-danger {
+  background-color: var(--nv-danger);
+  color: var(--nv-white);
+}
+.tag.tag-secondary {
+  background-color: var(--nv-secondary);
+  color: var(--nv-white);
 }
 
 .main {

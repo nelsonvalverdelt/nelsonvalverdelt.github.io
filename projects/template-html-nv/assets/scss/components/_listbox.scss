@@ -17,6 +17,8 @@ $icon-span-spacing: var(--nv-listbox-item-icon-span-spacing);
       padding-left: 10px;
       padding-right: 30px;
       height: var(--nv-listbox-filter-height);
+      font-family: "Font-Medium";
+      font-size: var(--nv-control-font-size);
       &:focus {
         border-color: var(--nv-dark);
       }
@@ -36,6 +38,8 @@ $icon-span-spacing: var(--nv-listbox-item-icon-span-spacing);
     gap: var(--nv-listbox-gap);
     > .item {
       cursor: pointer;
+      font-family: "Font-Regular";
+      font-size: var(--nv-control-font-size);
       padding: var(--nv-listbox-item-padding);
       &:hover {
         background-color: var(--nv-muted-light);

@@ -80,6 +80,14 @@ const menuRoutes = [
         children: [],
       },
       {
+        name: "Tags",
+        icon: null,
+        path: "/projects/template-html-nv/pages/components/tags.html",
+        active: false,
+        span: null,
+        children: [],
+      },
+      {
         name: "Tables",
         icon: null,
         path: null,

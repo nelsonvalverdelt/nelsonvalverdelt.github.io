@@ -7,10 +7,9 @@
   padding: var(--nv-btn-padding);
   box-shadow: var(--nv-control-box-shadow);
   cursor: pointer;
-  font-family: "Font-Medium";
+  font-family: "Font-Regular";
   font-size: var(--nv-control-font-size);
   transition: background-color var(--nv-control-transition-timer) ease-in-out;
-
   &.rounded {
     border-radius: var(--nv-btn-border-radius-rounded);
   }

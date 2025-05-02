@@ -12,7 +12,6 @@
     bottom: -1px;
     > .tab-header-item {
       display: flex;
-      font-family: "Font-Medium";
       cursor: pointer;
       padding: var(--nv-tabs-padding-item);
       border-top-right-radius: var(--nv-tabs-border-radius);
@@ -20,6 +19,8 @@
       box-shadow: var(--nv-tabs-item-box-shadow);
       background-color: rgba(var(--nv-primary-rgb), 0.1);
       white-space: nowrap;
+      font-family: "Font-Medium";
+      font-size: var(--nv-control-font-size);
       &.active {
         background-color: var(--nv-white);
       }
@@ -30,7 +31,6 @@
         position: relative;
         &.active {
           color: var(--nv-primary);
-          font-family: "Font-Medium";
           &::after {
             content: "";
             position: absolute;

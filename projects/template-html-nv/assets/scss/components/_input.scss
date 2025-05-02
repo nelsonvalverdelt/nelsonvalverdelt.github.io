@@ -12,10 +12,10 @@
   display: block;
   margin-top: 0.25rem;
   line-height: 1rem;
+  font-family: "Font-Regular";
+  font-size: var(--nv-control-font-size);
   &::placeholder {
     color: var(--nv-placeholder);
-    font-family: "Font-Medium";
-    font-size: var(--nv-control-font-size);
   }
   &:hover,
   &:focus {
