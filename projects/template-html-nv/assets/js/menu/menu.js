@@ -32,7 +32,7 @@ function menu() {
     getMenuItem: (item, level) => {
       const itemAcollapsed = item.children.length > 0 ? '<button type="button" class="item-collapsed" onclick="$menu.triggerItemMenu(this)"></button>' : "";
       const icon = item?.icon ? ` <em class="icon ${item.icon}"></em>` : "";
-      const span = item?.span && level >= 2 && item.children.length === 0 ? `<span class="tag-count">${item.span}</span>` : "";
+      const span = item?.span && item.children.length === 0 ? `<span class="tag-count">${item.span}</span>` : "";
       return `
           <a ${item?.path ? `href=${item.path}` : ""} class="menu-item-link">
             ${icon}
