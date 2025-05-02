@@ -72,8 +72,10 @@
   --nv-listbox-item-icon-span-spacing: 0.5rem;
   --nv-listbox-checkmark-item-padding: 1.5rem;
   --nv-listbox-filter-height: 34px;
-  --nv-tag-padding: 0.25rem 0.5rem;
+  --nv-tag-padding: 0.2rem 0.5rem;
   --nv-tag-radius: 0.25rem;
+  --nv-tag-radius-rounded: 0.75rem;
+  --nv-tag-gap: 0.25rem;
 }
 
 :root,
@@ -12328,6 +12330,11 @@ h6 {
   border-radius: var(--nv-tag-radius);
   font-size: 12px;
   font-family: "Font-Bold";
+  align-items: center;
+  gap: var(--nv-tag-gap);
+}
+.tag.rounded {
+  border-radius: var(--nv-tag-radius-rounded);
 }
 .tag.tag-primary {
   background-color: var(--nv-primary);

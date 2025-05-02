@@ -77,7 +77,7 @@
   //listbox
   --nv-listbox-padding: 0.5rem;
   --nv-listbox-border: 1px solid var(--nv-muted);
-  --nv-listbox-radius: 6px;
+  --nv-listbox-radius: 0.35rem;
   --nv-listbox-max-width: 200px;
   --nv-listbox-gap: 0.5rem;
   --nv-listbox-item-padding: 0.15rem 0.5rem;
@@ -85,6 +85,12 @@
   --nv-listbox-item-icon-span-spacing: 0.5rem;
   --nv-listbox-checkmark-item-padding: 1.5rem;
   --nv-listbox-filter-height: 34px;
+
+  //tag
+  --nv-tag-padding: 0.2rem 0.5rem;
+  --nv-tag-radius: 0.25rem;
+  --nv-tag-radius-rounded: 0.75rem;
+  --nv-tag-gap: 0.25rem;
 }
 :root,
 [data-theme="light"] {

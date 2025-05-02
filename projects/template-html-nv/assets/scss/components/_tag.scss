@@ -1,0 +1,18 @@
+.tag {
+  padding: var(--nv-tag-padding);
+  display: inline-flex;
+  border-radius: var(--nv-tag-radius);
+  font-size: 12px;
+  font-family: "Font-Bold";
+  align-items: center;
+  gap: var(--nv-tag-gap);
+  &.rounded{
+    border-radius: var(--nv-tag-radius-rounded);
+  }
+  @each $key, $value in $control-colors {
+    &.tag-#{$key} {
+      background-color: $value;
+      color: var(--nv-white);
+    }
+  }
+}

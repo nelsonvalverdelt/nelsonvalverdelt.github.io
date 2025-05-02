@@ -84,7 +84,7 @@ const menuRoutes = [
         icon: null,
         path: "/projects/template-html-nv/pages/components/tags.html",
         active: false,
-        span: null,
+        span: 4,
         children: [],
       },
       {
