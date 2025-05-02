@@ -12282,6 +12282,78 @@ h6 {
   justify-content: left;
 }
 
+.pagination {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.pagination > .previous,
+.pagination > .first,
+.pagination > .next,
+.pagination > .last {
+  border: 0;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.pagination > .previous > em,
+.pagination > .first > em,
+.pagination > .next > em,
+.pagination > .last > em {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.35rem;
+  border-radius: 0.25rem;
+}
+.pagination > .previous:hover > em,
+.pagination > .first:hover > em,
+.pagination > .next:hover > em,
+.pagination > .last:hover > em {
+  background-color: var(--nv-muted);
+}
+.pagination > .pages {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.pagination > .pages > .page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Font-Medium";
+  font-size: var(--nv-control-font-size);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.15rem;
+  min-width: 1.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.25s ease-in-out;
+}
+.pagination > .pages > .page:hover {
+  background-color: var(--nv-muted);
+}
+.pagination > .pages > .page.active {
+  background-color: var(--nv-primary);
+  color: var(--nv-white);
+}
+.pagination.rounded > .previous > em,
+.pagination.rounded > .first > em,
+.pagination.rounded > .next > em,
+.pagination.rounded > .last > em {
+  border-radius: 50%;
+  padding: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.pagination.rounded > .pages > .page {
+  border-radius: 50%;
+  height: 1.5rem;
+  min-width: 1.5rem;
+}
+
 .listbox {
   display: flex;
   flex-direction: column;

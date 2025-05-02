@@ -99,7 +99,7 @@ const menuRoutes = [
             icon: null,
             path: "/projects/template-html-nv/pages/components/tables/basic.html",
             active: false,
-            span: null,
+            span: 3,
             children: [],
           },
           {
@@ -122,6 +122,14 @@ const menuRoutes = [
             name: "Row expansion",
             icon: null,
             path: "/projects/template-html-nv/pages/components/tables/row-expansion.html",
+            active: false,
+            span: null,
+            children: [],
+          },
+          {
+            name: "Pagination",
+            icon: null,
+            path: "/projects/template-html-nv/pages/components/tables/pagination.html",
             active: false,
             span: null,
             children: [],
