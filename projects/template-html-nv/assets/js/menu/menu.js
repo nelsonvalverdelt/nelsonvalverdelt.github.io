@@ -42,8 +42,8 @@ function menu() {
           </a>
         `;
     },
-    loadResponse: () => {
-      if(window.innerWidth <= 768) {
+    validateResponse: () => {
+      if (window.innerWidth <= 768) {
         dom.$viewMode.checked = true;
       }
     },
@@ -60,7 +60,7 @@ function menu() {
     },
   };
   fn.loadMenu();
-  fn.loadResponse();
+  fn.validateResponse();
   return {
     triggerItemMenu: fn.actions.triggerItemMenu,
   };

@@ -11296,7 +11296,6 @@ h6 {
   width: 20rem;
   box-shadow: 0px 0px 4px 1px var(--nv-muted);
   position: fixed;
-  height: 100%;
   padding: 1rem 0.75rem;
   transition: width 0.35s ease-in-out;
   background-color: var(--nv-white);
@@ -11366,7 +11365,7 @@ h6 {
 }
 .menu > .menu-body {
   overflow-y: auto;
-  height: 80dvh;
+  height: 82dvh;
 }
 .menu > .menu-body .menu-items,
 .menu > .menu-body .menu-subitems {
@@ -11497,11 +11496,17 @@ h6 {
 
 @media (max-width: 576px) {
   .menu {
-    position: fixed;
     width: 100%;
+    height: 100%;
   }
   .menu > .menu-header > .menu-header-nav > .action-view-mode {
-    display: none;
+    visibility: hidden;
+  }
+  .menu > .menu-body {
+    height: 92dvh;
+  }
+  .menu:has(> .menu-header > .menu-header-nav > .action-view-mode > input[type=checkbox]:checked):not(:hover) .menu-item > .menu-item-link {
+    padding: 0.75rem 0;
   }
 }
 .scrollbar::-webkit-scrollbar-track {
@@ -12187,6 +12192,10 @@ h6 {
 }
 .form-radio.filled.secondary > label {
   background-color: var(--nv-secondary);
+}
+
+.table-responsive {
+  overflow: auto;
 }
 
 .table {
