@@ -11365,8 +11365,8 @@ h6 {
   opacity: 0.5;
 }
 .menu > .menu-body {
-  height: 100%;
   overflow-y: auto;
+  height: 80dvh;
 }
 .menu > .menu-body .menu-items,
 .menu > .menu-body .menu-subitems {
@@ -11412,7 +11412,6 @@ h6 {
 .menu-item {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: inline-flex;
   flex-wrap: wrap;
 }
@@ -11475,7 +11474,7 @@ h6 {
 }
 .menu-item.active > .menu-subitems {
   position: relative;
-  height: 100%;
+  height: auto;
   opacity: 1;
   visibility: visible;
 }
@@ -11505,6 +11504,23 @@ h6 {
     display: none;
   }
 }
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #ececec;
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background-color: #ececec;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  background-image: -webkit-linear-gradient(top, #d4d4d4 0%, #d4d4d4 50%, #d4d4d4 51%, #d4d4d4 100%);
+}
+
 .tab {
   display: flex;
   flex-wrap: wrap;

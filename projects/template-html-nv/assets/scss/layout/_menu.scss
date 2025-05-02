@@ -1,5 +1,5 @@
 //1. Maximized menu
-
+$menu-body-max-height: 80dvh;
 .menu {
   width: $menu-maximized;
   box-shadow: 0px 0px 4px 1px var(--nv-muted);
@@ -75,8 +75,8 @@
     }
   }
   > .menu-body {
-    height: 100%;
     overflow-y: auto;
+    height: $menu-body-max-height;
   }
   > .menu-body {
     .menu-items,
@@ -134,7 +134,6 @@
 .menu-item {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: inline-flex;
   flex-wrap: wrap;
   > .menu-item-link {
@@ -202,7 +201,7 @@
     }
     > .menu-subitems {
       position: relative;
-      height: 100%;
+      height: auto;
       opacity: 1;
       visibility: visible;
       > .menu-item {
