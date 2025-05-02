@@ -1,6 +1,7 @@
 function menu() {
   let dom = {
     $menu: document.querySelector(".menu-body"),
+    $viewMode: document.getElementById("view-mode"),
   };
   let data = {
     menuItems: menuRoutes,
@@ -41,6 +42,11 @@ function menu() {
           </a>
         `;
     },
+    loadResponse: () => {
+      if(window.innerWidth <= 768) {
+        dom.$viewMode.checked = true;
+      }
+    },
     actions: {
       triggerItemMenu: (e) => {
         const menuItem = e.closest(".menu-item");
@@ -54,6 +60,7 @@ function menu() {
     },
   };
   fn.loadMenu();
+  fn.loadResponse();
   return {
     triggerItemMenu: fn.actions.triggerItemMenu,
   };
