@@ -56,12 +56,13 @@
   --nv-tabs-body-box-shadow: 0 0 0.5px 0.5px var(--nv-muted);
   --nv-tabs-curved-padding-item: 4rem;
   --nv-table-row-box-shadow: 0 0 3px 0 var(--nv-muted);
-  --nv-table-cell-padding: .5rem 0;
-  --nv-table-cell-margin: .5rem 0;
-  --nv-table-td-padding: 0 .5rem;
-  --nv-table-th-padding: 0 .5rem;
+  --nv-table-cell-padding: 0.5rem 0;
+  --nv-table-cell-margin: 0.5rem 0;
+  --nv-table-td-padding: 0 0.5rem;
+  --nv-table-th-padding: 0 0.5rem;
   --nv-table-bg-striped: #f5f5f5;
   --nv-table-bg-hover: #f5f5f5;
+  --nv-table-th-size: 12px;
   --nv-listbox-padding: 0.5rem;
   --nv-listbox-border: 1px solid var(--nv-muted);
   --nv-listbox-radius: 0.35rem;
@@ -12184,8 +12185,8 @@ h6 {
   align-items: center;
   padding: var(--nv-table-cell-padding);
   margin: var(--nv-table-cell-margin);
-  font-family: "Font-Regular";
-  font-size: var(--nv-control-font-size);
+  font-family: "Font-Medium";
+  font-size: var(--nv-table-th-size);
 }
 .table > thead > tr > th > .cell:hover > .btn-order {
   opacity: 1;

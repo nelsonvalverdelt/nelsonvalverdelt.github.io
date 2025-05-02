@@ -10,8 +10,8 @@
           align-items: center;
           padding: var(--nv-table-cell-padding);
           margin: var(--nv-table-cell-margin);
-          font-family: "Font-Regular";
-          font-size: var(--nv-control-font-size);
+          font-family: "Font-Medium";
+          font-size: var(--nv-table-th-size);
           &:hover {
             > .btn-order {
               opacity: 1;
