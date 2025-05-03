@@ -11283,6 +11283,8 @@ h6 {
   padding-bottom: var(--nv-card-padding);
 }
 .card > .card-body {
+  font-family: "Font-Light";
+  font-size: var(--nv-control-font-size);
   padding-bottom: var(--nv-card-padding);
   padding-left: var(--nv-card-padding);
   padding-right: var(--nv-card-padding);
