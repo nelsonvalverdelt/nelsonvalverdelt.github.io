@@ -92,6 +92,15 @@
   --nv-tag-radius: 0.25rem;
   --nv-tag-radius-rounded: 0.75rem;
   --nv-tag-gap: 0.25rem;
+
+  //alert
+  --nv-alert-min-width: 300px;
+  --nv-alert-max-width: 350px;
+  --nv-alert-radius: 4px;
+  --nv-alert-box-shadow: 0 1px 5px 1px var(--nv-muted);
+  --nv-alert-icon-size: 14px;
+  --nv-alert-gap: 1rem;
+  --nv-alert-min-height: 70px;
 }
 :root,
 [data-theme="light"] {
@@ -155,6 +164,7 @@ $spacing-scale: (
   3: 1rem,
   4: 2rem,
 );
+
 $control-colors: (
   primary: var(--nv-primary),
   success: var(--nv-success),
@@ -162,4 +172,13 @@ $control-colors: (
   warning: var(--nv-warning),
   danger: var(--nv-danger),
   secondary: var(--nv-secondary),
+);
+
+$control-rgb-colors: (
+  primary: var(--nv-primary-rgb),
+  success: var(--nv-success-rgb),
+  info: var(--nv-info-rgb),
+  warning: var(--nv-warning-rgb),
+  danger: var(--nv-danger-rgb),
+  secondary: var(--nv-secondary-rgb),
 );
