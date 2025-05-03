@@ -8,14 +8,15 @@
 @import "./utilities/spacing";
 @import "./utilities/align";
 
+//Base
+@import "./base/reset";
+@import "./base/typography";
+
 //Vendors
 @import "./vendors/bootstrap-icons/bootstrap-icons";
 @import "./vendors/bootstrap-icons/bootstrap-icons-custom";
 @import "./vendors/prism/prism-custom";
 
-//Base
-@import "./base/reset";
-@import "./base/typography";
 //Layout
 @import "./layout/footer";
 @import "./layout/forms";

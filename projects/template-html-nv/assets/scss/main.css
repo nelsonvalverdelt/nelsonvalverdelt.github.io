@@ -2253,6 +2253,67 @@
   text-align: center;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--nv-control-color);
+  font-family: "Font-Medium";
+}
+
+/**
+* @license
+*
+* Font Family: Supreme
+* Designed by: Jérémie Hornus, Ilya Naumoff
+* URL: https://www.fontshare.com/fonts/supreme
+* © 2025 Indian Type Foundry
+*
+* Supreme Light 
+* Supreme Regular 
+* Supreme Medium 
+* Supreme Bold 
+*
+*/
+@font-face {
+  font-family: "Font-Light";
+  src: url("../fonts/Supreme-Light.woff2") format("woff2"), url("../fonts/Supreme-Light.woff") format("woff"), url("../fonts/Supreme-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font-Regular";
+  src: url("../fonts/Supreme-Regular.woff2") format("woff2"), url("../fonts/Supreme-Regular.woff") format("woff"), url("../fonts/Supreme-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font-Medium";
+  src: url("../fonts/Supreme-Medium.woff2") format("woff2"), url("../fonts/Supreme-Medium.woff") format("woff"), url("../fonts/Supreme-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font-Bold";
+  src: url("../fonts/Supreme-Bold.woff2") format("woff2"), url("../fonts/Supreme-Bold.woff") format("woff"), url("../fonts/Supreme-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
 /*!
  * Bootstrap Icons v1.11.3 (https://icons.getbootstrap.com/)
  * Copyright 2019-2024 The Bootstrap Authors
@@ -10491,7 +10552,6 @@
 
 code[class*=language-],
 pre[class*=language-] {
-  font-family: unset;
   width: 100%;
   border-radius: 7px;
   background-color: #000;
@@ -10593,67 +10653,6 @@ pre[class*=language-] code {
   visibility: hidden;
 }
 
-*,
-::after,
-::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-label,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--nv-control-color);
-  font-family: "Font-Medium";
-}
-
-/**
-* @license
-*
-* Font Family: Supreme
-* Designed by: Jérémie Hornus, Ilya Naumoff
-* URL: https://www.fontshare.com/fonts/supreme
-* © 2025 Indian Type Foundry
-*
-* Supreme Light 
-* Supreme Regular 
-* Supreme Medium 
-* Supreme Bold 
-*
-*/
-@font-face {
-  font-family: "Font-Light";
-  src: url("../fonts/Supreme-Light.woff2") format("woff2"), url("../fonts/Supreme-Light.woff") format("woff"), url("../fonts/Supreme-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Font-Regular";
-  src: url("../fonts/Supreme-Regular.woff2") format("woff2"), url("../fonts/Supreme-Regular.woff") format("woff"), url("../fonts/Supreme-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Font-Medium";
-  src: url("../fonts/Supreme-Medium.woff2") format("woff2"), url("../fonts/Supreme-Medium.woff") format("woff"), url("../fonts/Supreme-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Font-Bold";
-  src: url("../fonts/Supreme-Bold.woff2") format("woff2"), url("../fonts/Supreme-Bold.woff") format("woff"), url("../fonts/Supreme-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
 .form-group {
   position: relative;
 }
@@ -12431,7 +12430,7 @@ h6 {
   margin-left: var(--nv-listbox-item-icon-span-spacing);
 }
 
-.tag {
+.tags {
   padding: var(--nv-tag-padding);
   display: inline-flex;
   border-radius: var(--nv-tag-radius);
@@ -12440,30 +12439,30 @@ h6 {
   align-items: center;
   gap: var(--nv-tag-gap);
 }
-.tag.rounded {
+.tags.rounded {
   border-radius: var(--nv-tag-radius-rounded);
 }
-.tag.tag-primary {
+.tags.tag-primary {
   background-color: var(--nv-primary);
   color: var(--nv-white);
 }
-.tag.tag-success {
+.tags.tag-success {
   background-color: var(--nv-success);
   color: var(--nv-white);
 }
-.tag.tag-info {
+.tags.tag-info {
   background-color: var(--nv-info);
   color: var(--nv-white);
 }
-.tag.tag-warning {
+.tags.tag-warning {
   background-color: var(--nv-warning);
   color: var(--nv-white);
 }
-.tag.tag-danger {
+.tags.tag-danger {
   background-color: var(--nv-danger);
   color: var(--nv-white);
 }
-.tag.tag-secondary {
+.tags.tag-secondary {
   background-color: var(--nv-secondary);
   color: var(--nv-white);
 }

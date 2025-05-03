@@ -9,27 +9,35 @@ function menu() {
   let fn = {
     loadMenu: () => {
       let menuItemBuild = '<ul class="menu-items">';
-      menuItemBuild += fn.recursiveFullItems(data.menuItems);
+      let menuLevelItems = fn.createLevelItems(data.menuItems);
+      menuItemBuild += fn.recursiveFullItems(menuLevelItems);
       menuItemBuild += "</ul>";
       dom.$menu.innerHTML = menuItemBuild;
     },
-    recursiveFullItems: (children, level = 1) => {
+    createLevelItems: (items, nextLevel = 0) => {
+      for (const item of items) {
+        item.level = nextLevel + 1;
+        if (item.children.length > 0) {
+          fn.createLevelItems(item.children, item.level);
+        }
+      }
+      return items;
+    },
+    recursiveFullItems: (children) => {
       let menuItemBuild = "";
       for (const item of children) {
-        menuItemBuild += `<li class="menu-item ${item.active ? "active" : ""}" data-level="${level}">`;
-        menuItemBuild += fn.getMenuItem(item, level);
+        menuItemBuild += `<li class="menu-item ${item.active ? "active" : ""}" data-level="${item.level}">`;
+        menuItemBuild += fn.getMenuItem(item);
         if (item.children.length > 0) {
-          level++;
-          menuItemBuild += `<ul class="menu-subitems ${level === 2 ? "shadow-line" : "left-sub-item"}">`;
-          menuItemBuild += fn.recursiveFullItems(item.children, level);
+          menuItemBuild += `<ul class="menu-subitems ${item.level === 1 ? "shadow-line" : "left-sub-item"}">`;
+          menuItemBuild += fn.recursiveFullItems(item.children);
           menuItemBuild += "</ul>";
-          level = 1;
         }
         menuItemBuild += "</li>";
       }
       return menuItemBuild;
     },
-    getMenuItem: (item, level) => {
+    getMenuItem: (item) => {
       const itemAcollapsed = item.children.length > 0 ? '<button type="button" class="item-collapsed" onclick="$menu.triggerItemMenu(this)"></button>' : "";
       const icon = item?.icon ? ` <em class="icon ${item.icon}"></em>` : "";
       const span = item?.span && item.children.length === 0 ? `<span class="tag-count">${item.span}</span>` : "";
