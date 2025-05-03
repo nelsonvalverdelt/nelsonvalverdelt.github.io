@@ -36,24 +36,62 @@
           <div class="card">
             <h4 class="card-header">Tag basic</h4>
             <div class="card-body">
-              <div class="d-flex flex-wrap gap-3">
-                <div class="tags tag-primary">
-                  <span>Primary</span>
+              <div id="tab-tag-basic" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
                 </div>
-                <div class="tags tag-success">
-                  <span>Success</span>
-                </div>
-                <div class="tags tag-info">
-                  <span>Info</span>
-                </div>
-                <div class="tags tag-warning">
-                  <span>Warning</span>
-                </div>
-                <div class="tags tag-danger">
-                  <span>Danger</span>
-                </div>
-                <div class="tags tag-secondary">
-                  <span>Secondary</span>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <div class="px-3">
+                      <div class="d-flex flex-wrap gap-3">
+                        <div class="tags tag-primary">
+                          <span>Primary</span>
+                        </div>
+                        <div class="tags tag-success">
+                          <span>Success</span>
+                        </div>
+                        <div class="tags tag-info">
+                          <span>Info</span>
+                        </div>
+                        <div class="tags tag-warning">
+                          <span>Warning</span>
+                        </div>
+                        <div class="tags tag-danger">
+                          <span>Danger</span>
+                        </div>
+                        <div class="tags tag-secondary">
+                          <span>Secondary</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <pre><code class="language-markup">
+  <div class="d-flex flex-wrap gap-3">
+    <div class="tags tag-primary">
+      <span>Primary</span>
+    </div>
+    <div class="tags tag-success">
+      <span>Success</span>
+    </div>
+    <div class="tags tag-info">
+      <span>Info</span>
+    </div>
+    <div class="tags tag-warning">
+      <span>Warning</span>
+    </div>
+    <div class="tags tag-danger">
+      <span>Danger</span>
+    </div>
+    <div class="tags tag-secondary">
+      <span>Secondary</span>
+    </div>
+  </div> 
+                      </code></pre>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -159,5 +197,7 @@
   <!-- End: Tabs-->
   <script src="/projects/template-html-nv/assets/js/menu/menu-route.js"></script>
   <script src="/projects/template-html-nv/assets/js/menu/menu.js" defer></script>
-  <script></script>
+  <script>
+    fnTab('#tab-tag-basic');
+  </script>
 </html>
