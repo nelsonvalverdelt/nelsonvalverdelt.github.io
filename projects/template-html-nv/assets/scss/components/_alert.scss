@@ -1,0 +1,127 @@
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 1px 5px 1px var(--nv-muted);
+  border-radius: 4px;
+  min-width: 450px;
+  max-width: 450px;
+  gap: 1rem;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  @each $color, $value in $control-colors {
+    &.alert-#{$color} {
+      &::after {
+        background-color: $value;
+      }
+      > .icon {
+        background-color: $value;
+      }
+    }
+  }
+
+  > .text {
+    font-family: "Font-Light";
+    font-size: var(--nv-control-font-size);
+  }
+
+  > .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 3px;
+    > em {
+      font-size: 14px;
+      height: 14px;
+      color: var(--nv-white);
+    }
+  }
+
+  > .close {
+    cursor: pointer;
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    > em {
+      color: var(--nv-dark);
+    }
+  }
+}
+
+.alert2 {
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 1px 5px 1px var(--nv-muted);
+  border-radius: 4px;
+  min-width: 450px;
+  max-width: 450px;
+  padding: 0.5rem;
+  gap: 0.75rem;
+  min-height: 60px;
+  > .text {
+    display: inline-flex;
+    flex-direction: column;
+    > .title {
+      font-family: "Font-Medium";
+      font-size: var(--nv-control-font-size);
+    }
+    > .description {
+      font-family: "Font-Light";
+      font-size: var(--nv-control-font-size);
+    }
+  }
+
+  &::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+  }
+  @each $color, $value in $control-colors {
+    &.alert-#{$color} {
+      > .icon {
+        background-color: $value;
+      }
+      &::before {
+        background-color: $value;
+      }
+    }
+  }
+
+  > .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 3px;
+    > em {
+      font-size: 14px;
+      height: 14px;
+      color: var(--nv-white);
+    }
+  }
+
+  > .close {
+    cursor: pointer;
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    > em {
+      color: var(--nv-dark);
+    }
+  }
+}

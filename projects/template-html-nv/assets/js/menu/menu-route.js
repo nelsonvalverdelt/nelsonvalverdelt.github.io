@@ -136,6 +136,14 @@ const menuRoutes = [
           },
         ],
       },
+      {
+        name: "Alerts",
+        icon: null,
+        path: "/projects/template-html-nv/pages/components/alerts.html",
+        active: false,
+        span: 2,
+        children: [],
+      },
     ],
   },
   {

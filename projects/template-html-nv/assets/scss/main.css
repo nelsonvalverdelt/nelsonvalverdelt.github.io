@@ -12459,6 +12459,180 @@ h6 {
   color: var(--nv-white);
 }
 
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 1px 5px 1px var(--nv-muted);
+  border-radius: 4px;
+  min-width: 450px;
+  max-width: 450px;
+  gap: 1rem;
+}
+.alert::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.alert.alert-primary::after {
+  background-color: var(--nv-primary);
+}
+.alert.alert-primary > .icon {
+  background-color: var(--nv-primary);
+}
+.alert.alert-success::after {
+  background-color: var(--nv-success);
+}
+.alert.alert-success > .icon {
+  background-color: var(--nv-success);
+}
+.alert.alert-info::after {
+  background-color: var(--nv-info);
+}
+.alert.alert-info > .icon {
+  background-color: var(--nv-info);
+}
+.alert.alert-warning::after {
+  background-color: var(--nv-warning);
+}
+.alert.alert-warning > .icon {
+  background-color: var(--nv-warning);
+}
+.alert.alert-danger::after {
+  background-color: var(--nv-danger);
+}
+.alert.alert-danger > .icon {
+  background-color: var(--nv-danger);
+}
+.alert.alert-secondary::after {
+  background-color: var(--nv-secondary);
+}
+.alert.alert-secondary > .icon {
+  background-color: var(--nv-secondary);
+}
+.alert > .text {
+  font-family: "Font-Light";
+  font-size: var(--nv-control-font-size);
+}
+.alert > .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 3px;
+}
+.alert > .icon > em {
+  font-size: 14px;
+  height: 14px;
+  color: var(--nv-white);
+}
+.alert > .close {
+  cursor: pointer;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.alert > .close > em {
+  color: var(--nv-dark);
+}
+
+.alert2 {
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 1px 5px 1px var(--nv-muted);
+  border-radius: 4px;
+  min-width: 450px;
+  max-width: 450px;
+  padding: 0.5rem;
+  gap: 0.75rem;
+  min-height: 60px;
+}
+.alert2 > .text {
+  display: inline-flex;
+  flex-direction: column;
+}
+.alert2 > .text > .title {
+  font-family: "Font-Medium";
+  font-size: var(--nv-control-font-size);
+}
+.alert2 > .text > .description {
+  font-family: "Font-Light";
+  font-size: var(--nv-control-font-size);
+}
+.alert2::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+}
+.alert2.alert-primary > .icon {
+  background-color: var(--nv-primary);
+}
+.alert2.alert-primary::before {
+  background-color: var(--nv-primary);
+}
+.alert2.alert-success > .icon {
+  background-color: var(--nv-success);
+}
+.alert2.alert-success::before {
+  background-color: var(--nv-success);
+}
+.alert2.alert-info > .icon {
+  background-color: var(--nv-info);
+}
+.alert2.alert-info::before {
+  background-color: var(--nv-info);
+}
+.alert2.alert-warning > .icon {
+  background-color: var(--nv-warning);
+}
+.alert2.alert-warning::before {
+  background-color: var(--nv-warning);
+}
+.alert2.alert-danger > .icon {
+  background-color: var(--nv-danger);
+}
+.alert2.alert-danger::before {
+  background-color: var(--nv-danger);
+}
+.alert2.alert-secondary > .icon {
+  background-color: var(--nv-secondary);
+}
+.alert2.alert-secondary::before {
+  background-color: var(--nv-secondary);
+}
+.alert2 > .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 3px;
+}
+.alert2 > .icon > em {
+  font-size: 14px;
+  height: 14px;
+  color: var(--nv-white);
+}
+.alert2 > .close {
+  cursor: pointer;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+.alert2 > .close > em {
+  color: var(--nv-dark);
+}
+
 .main {
   display: flex;
   width: 100%;
