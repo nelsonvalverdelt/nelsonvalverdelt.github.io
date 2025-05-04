@@ -2253,6 +2253,26 @@
   text-align: center;
 }
 
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.position-static {
+  position: static;
+}
+
 *,
 ::after,
 ::before {
@@ -13029,6 +13049,51 @@ pre[class*=language-] code {
 }
 .alert6 > .close > em {
   color: var(--nv-dark);
+}
+
+.alert-top-center {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.alert-top-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.alert-top-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.alert-bottom-center {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.alert-bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.alert-bottom-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.alert-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main {
