@@ -84,6 +84,15 @@
   --nv-alert-icon-size: 14px;
   --nv-alert-gap: 1rem;
   --nv-alert-min-height: 70px;
+  --nv-modal-gap: 1rem;
+  --nv-modal-radius: 6px;
+  --nv-modal-box-shadow: 0 1px 5px 1px var(--nv-muted);
+  --nv-modal-header-box-shadow: 0px 2px 3px -2px var(--nv-muted);
+  --nv-modal-header-padding: 1rem;
+  --nv-modal-body-padding: 1rem 1rem 1rem 1rem;
+  --nv-modal-footer-gap: 0.5rem;
+  --nv-modal-footer-box-shadow: 0px -2px 3px -2px var(--nv-muted);
+  --nv-modal-footer-padding: 1rem;
 }
 
 :root,
@@ -2271,6 +2280,14 @@
 
 .position-static {
   position: static;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 *,
@@ -11299,6 +11316,7 @@ pre[class*=language-] code {
 .card {
   border-radius: var(--nv-card-border-radius);
   box-shadow: var(--nv-card-box-shadow);
+  overflow-x: auto;
 }
 .card > .card-header {
   font-family: "Font-Medium";
@@ -13094,6 +13112,70 @@ pre[class*=language-] code {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.modal {
+  width: 350px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--nv-modal-gap);
+  box-shadow: var(--nv-modal-box-shadow);
+  border-radius: var(--nv-modal-radius);
+}
+.modal.modal-xs {
+  width: 350px;
+}
+.modal.modal-sm {
+  width: 576px;
+}
+.modal.modal-md {
+  width: 768px;
+}
+.modal.modal-lg {
+  width: 992px;
+}
+.modal.modal-xl {
+  width: 1200px;
+}
+.modal.modal-xxl {
+  width: 1400px;
+}
+.modal > .modal-header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--nv-modal-header-padding);
+  box-shadow: var(--nv-modal-header-box-shadow);
+}
+.modal > .modal-header > .modal-title {
+  font-family: "Font-Medium";
+}
+.modal > .modal-header > .btn-close {
+  cursor: pointer;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  color: var(--nv-dark);
+}
+.modal > .modal-header > .btn-close > em {
+  color: var(--nv-dark);
+}
+.modal > .modal-body {
+  display: inline-flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding: var(--nv-modal-body-padding);
+}
+.modal > .modal-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--nv-modal-footer-gap);
+  padding: var(--nv-modal-footer-padding);
+  box-shadow: var(--nv-modal-footer-box-shadow);
 }
 
 .main {

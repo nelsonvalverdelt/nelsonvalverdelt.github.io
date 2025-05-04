@@ -1,0 +1,52 @@
+.modal {
+  width: map-get($map: $modal-size, $key: xs);
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--nv-modal-gap);
+  box-shadow: var(--nv-modal-box-shadow);
+  border-radius: var(--nv-modal-radius);
+
+  @each $key, $value in $modal-size {
+    &.modal-#{$key} {
+      width: $value;
+    }
+  }
+
+  > .modal-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--nv-modal-header-padding);
+    box-shadow: var(--nv-modal-header-box-shadow);
+    > .modal-title {
+      font-family: "Font-Medium";
+    }
+    > .btn-close {
+      cursor: pointer;
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: 0;
+      color: var(--nv-dark);
+      > em {
+        color: var(--nv-dark);
+      }
+    }
+  }
+  > .modal-body {
+    display: inline-flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: var(--nv-modal-body-padding);
+  }
+  > .modal-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--nv-modal-footer-gap);
+    padding: var(--nv-modal-footer-padding);
+    box-shadow: var(--nv-modal-footer-box-shadow);
+  }
+}
