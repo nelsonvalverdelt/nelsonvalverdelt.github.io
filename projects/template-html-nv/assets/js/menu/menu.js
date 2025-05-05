@@ -41,8 +41,11 @@ function menu() {
       const itemAcollapsed = item.children.length > 0 ? '<button type="button" class="item-collapsed" onclick="$menu.triggerItemMenu(this)"></button>' : "";
       const icon = item?.icon ? ` <em class="icon ${item.icon}"></em>` : "";
       const span = item?.span && item.children.length === 0 ? `<span class="tag-count">${item.span}</span>` : "";
+      const routePathName = fn.getLastPathName(document.location.pathname);
+      const pathName = fn.getLastPathName(item.path);
+      const pathIsSelected = routePathName === pathName;
       return `
-          <a ${item?.path ? `href=${item.path}` : ""} class="menu-item-link">
+          <a ${item?.path ? `href=${item.path}` : ""} class="menu-item-link ${pathIsSelected ? "menu-item-selected" : ""}">
             ${icon}
             <span class="name">${item.name}</span>
             ${span}
@@ -54,6 +57,12 @@ function menu() {
       if (window.innerWidth <= 768) {
         dom.$viewMode.checked = true;
       }
+    },
+    getLastPathName: (pathName) => {
+      if(!pathName) return '';
+      let pathNameSplit = pathName.split("/");
+      let lastPathName = pathName.split("/").splice(pathNameSplit.length - 2);
+      return lastPathName.join("/");
     },
     actions: {
       triggerItemMenu: (e) => {

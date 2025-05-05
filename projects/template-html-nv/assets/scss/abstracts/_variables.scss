@@ -101,6 +101,17 @@
   --nv-alert-icon-size: 14px;
   --nv-alert-gap: 1rem;
   --nv-alert-min-height: 70px;
+
+  //modal
+  --nv-modal-gap: 1rem;
+  --nv-modal-radius: 6px;
+  --nv-modal-box-shadow: 0 1px 5px 1px var(--nv-muted);
+  --nv-modal-header-box-shadow: 0px 2px 3px -2px var(--nv-muted);
+  --nv-modal-header-padding: 1rem;
+  --nv-modal-body-padding: 1rem 1rem 1rem 1rem;
+  --nv-modal-footer-gap: 0.5rem;
+  --nv-modal-footer-box-shadow: 0px -2px 3px -2px var(--nv-muted);
+  --nv-modal-footer-padding: 1rem;
 }
 :root,
 [data-theme="light"] {
@@ -151,6 +162,14 @@ $menu-maximized: 20rem;
 $column-numbers: 12;
 $grid-breakpoints: (
   xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+$modal-size: (
+  xs: 350px,
   sm: 576px,
   md: 768px,
   lg: 992px,

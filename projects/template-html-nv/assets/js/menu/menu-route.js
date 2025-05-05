@@ -144,6 +144,14 @@ const menuRoutes = [
         span: null,
         children: [],
       },
+      {
+        name: "Modal",
+        icon: null,
+        path: "/projects/template-html-nv/pages/components/modal.html",
+        active: true,
+        span: null,
+        children: [],
+      },
     ],
   },
   {
