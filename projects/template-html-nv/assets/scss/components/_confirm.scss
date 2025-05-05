@@ -1,0 +1,50 @@
+.confirm {
+  width: 400px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--nv-confirm-gap);
+  box-shadow: var(--nv-confirm-box-shadow);
+  border-radius: var(--nv-confirm-radius);
+
+  @each $key, $value in $modal-size {
+    &.confirm-#{$key} {
+      width: $value;
+    }
+  }
+
+  > .confirm-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--nv-confirm-header-padding);
+    > .confirm-title {
+      font-family: "Font-Medium";
+    }
+    > .btn-close {
+      cursor: pointer;
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: 0;
+      color: var(--nv-dark);
+      > em {
+        color: var(--nv-dark);
+      }
+    }
+  }
+  > .confirm-body {
+    display: inline-flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: var(--nv-confirm-body-padding);
+  }
+  > .confirm-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--nv-confirm-footer-gap);
+    padding: var(--nv-confirm-footer-padding);
+  }
+}

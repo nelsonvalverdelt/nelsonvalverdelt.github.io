@@ -93,6 +93,13 @@
   --nv-modal-footer-gap: 0.5rem;
   --nv-modal-footer-box-shadow: 0px -2px 3px -2px var(--nv-muted);
   --nv-modal-footer-padding: 1rem;
+  --nv-confirm-gap: 1rem;
+  --nv-confirm-radius: 6px;
+  --nv-confirm-box-shadow: 0 1px 5px 1px var(--nv-muted);
+  --nv-confirm-header-padding: 1rem 1rem 0 1rem;
+  --nv-confirm-body-padding: 0 1rem;
+  --nv-confirm-footer-gap: 0.5rem;
+  --nv-confirm-footer-padding: 0 1rem 1rem 1rem;
 }
 
 :root,
@@ -13189,6 +13196,68 @@ pre[class*=language-] code {
   gap: var(--nv-modal-footer-gap);
   padding: var(--nv-modal-footer-padding);
   box-shadow: var(--nv-modal-footer-box-shadow);
+}
+
+.confirm {
+  width: 400px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--nv-confirm-gap);
+  box-shadow: var(--nv-confirm-box-shadow);
+  border-radius: var(--nv-confirm-radius);
+}
+.confirm.confirm-xs {
+  width: 350px;
+}
+.confirm.confirm-sm {
+  width: 576px;
+}
+.confirm.confirm-md {
+  width: 768px;
+}
+.confirm.confirm-lg {
+  width: 992px;
+}
+.confirm.confirm-xl {
+  width: 1200px;
+}
+.confirm.confirm-xxl {
+  width: 1400px;
+}
+.confirm > .confirm-header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--nv-confirm-header-padding);
+}
+.confirm > .confirm-header > .confirm-title {
+  font-family: "Font-Medium";
+}
+.confirm > .confirm-header > .btn-close {
+  cursor: pointer;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  color: var(--nv-dark);
+}
+.confirm > .confirm-header > .btn-close > em {
+  color: var(--nv-dark);
+}
+.confirm > .confirm-body {
+  display: inline-flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding: var(--nv-confirm-body-padding);
+}
+.confirm > .confirm-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--nv-confirm-footer-gap);
+  padding: var(--nv-confirm-footer-padding);
 }
 
 .main {
