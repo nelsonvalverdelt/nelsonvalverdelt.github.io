@@ -11470,11 +11470,11 @@ pre[class*=language-] code {
   width: 100%;
   text-decoration: none;
 }
-.menu-item > .menu-item-link:hover {
+.menu-item > .menu-item-link:not(.menu-item-selected):hover {
   background-color: var(--nv-light-2);
   border-radius: 5px;
 }
-.menu-item > .menu-item-link:hover > .name {
+.menu-item > .menu-item-link:not(.menu-item-selected):hover > .name {
   font-family: "Font-Bold";
 }
 .menu-item > .menu-item-link > .name {
@@ -11489,6 +11489,7 @@ pre[class*=language-] code {
   align-items: center;
 }
 .menu-item > .menu-item-link > .tag-count {
+  font-family: "Font-Bold";
   margin-left: auto;
   display: inline-flex;
   justify-content: center;
@@ -11555,6 +11556,18 @@ pre[class*=language-] code {
     padding: 0.75rem 0;
   }
 }
+.menu-item-selected {
+  background-color: var(--nv-primary);
+  border-radius: 6px;
+}
+.menu-item-selected > .name {
+  color: var(--nv-white) !important;
+}
+.menu-item-selected > .tag-count {
+  background-color: var(--nv-white) !important;
+  color: var(--nv-primary) !important;
+}
+
 .scrollbar::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
   background-color: #ececec;
