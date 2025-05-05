@@ -112,6 +112,16 @@
   --nv-modal-footer-gap: 0.5rem;
   --nv-modal-footer-box-shadow: 0px -2px 3px -2px var(--nv-muted);
   --nv-modal-footer-padding: 1rem;
+
+  
+  //confirm
+  --nv-confirm-gap: 1rem;
+  --nv-confirm-radius: 6px;
+  --nv-confirm-box-shadow: 0 1px 5px 1px var(--nv-muted);
+  --nv-confirm-header-padding: 1rem 1rem 0 1rem;
+  --nv-confirm-body-padding: 0 1rem;
+  --nv-confirm-footer-gap: 0.5rem;
+  --nv-confirm-footer-padding: 0 1rem 1rem 1rem;
 }
 :root,
 [data-theme="light"] {

@@ -152,6 +152,14 @@ const menuRoutes = [
         span: null,
         children: [],
       },
+      {
+        name: "Confirm",
+        icon: null,
+        path: "/projects/template-html-nv/pages/components/confirm.html",
+        active: true,
+        span: null,
+        children: [],
+      },
     ],
   },
   {
