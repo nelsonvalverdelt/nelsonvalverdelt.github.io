@@ -1,0 +1,5 @@
+@each $key, $value in $control-colors {
+  .text-#{$key} {
+    color: $value;
+  }
+}

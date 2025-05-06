@@ -8,6 +8,7 @@
 @import "./utilities/spacing";
 @import "./utilities/align";
 @import "./utilities/flex";
+@import "./utilities/text";
 
 //Base
 @import "./base/reset";
@@ -46,6 +47,8 @@
 @import "./components/alert";
 @import "./components/modal";
 @import "./components/confirm";
+@import "./components/accordion";
+
 //Pages
 @import "./pages/home";
 //Themes

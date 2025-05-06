@@ -18,6 +18,8 @@
   --nv-control-font-size: 14px;
   --nv-control-help-color: #9590a3;
   --nv-control-transition-timer: 0.2s;
+  --nv-control-disabled: rgba(var(--nv-dark-rgb), 0.05);
+  --nv-control-text-disabled: rgba(var(--nv-dark-rgb), 0.8);
 
   //Buttons
   --nv-btn-padding: 0.45rem 1rem;
@@ -113,7 +115,6 @@
   --nv-modal-footer-box-shadow: 0px -2px 3px -2px var(--nv-muted);
   --nv-modal-footer-padding: 1rem;
 
-  
   //confirm
   --nv-confirm-gap: 1rem;
   --nv-confirm-radius: 6px;
@@ -122,6 +123,13 @@
   --nv-confirm-body-padding: 0 1rem;
   --nv-confirm-footer-gap: 0.5rem;
   --nv-confirm-footer-padding: 0 1rem 1rem 1rem;
+
+  //accordion
+  --nv-accordion-box-shadow: 0 1px 10px 0 rgba(var(--nv-dark-rgb), 0.1);
+  --nv-accordion-box-shadow-disabled: 1px 1px 8px 0 rgba(var(--nv-dark-rgb), 0.2);
+  --nv-accordion-header-padding: 1rem 1.5rem;
+  --nv-accordion-body-padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  --nv-accordion-radius: 4px;
 }
 :root,
 [data-theme="light"] {
@@ -142,7 +150,7 @@
   --nv-gray-25: rgba(47, 43, 61, 0.015);
   --nv-gray-50: rgba(47, 43, 61, 0.06);
   --nv-primary: #214674;
-  --nv-secondary: #808390;
+  --nv-secondary: #64666e;
   --nv-success: #28c76f;
   --nv-info: #00bad1;
   --nv-warning: #ff9f43;
@@ -156,7 +164,7 @@
   --nv-muted-light: rgba(136, 136, 136, 0.05);
   --nv-placeholder: rgba(136, 136, 136, 0.5);
   --nv-primary-rgb: 33, 70, 116;
-  --nv-secondary-rgb: 128, 131, 144;
+  --nv-secondary-rgb: 100, 102, 110;
   --nv-success-rgb: 40, 199, 111;
   --nv-info-rgb: 0, 186, 209;
   --nv-warning-rgb: 255, 159, 67;
