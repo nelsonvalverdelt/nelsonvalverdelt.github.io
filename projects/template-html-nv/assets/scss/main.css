@@ -11449,6 +11449,11 @@ pre[class*=language-] code {
 .menu > .menu-body {
   overflow-y: auto;
   height: 82dvh;
+  padding-right: 0.5rem;
+}
+.menu > .menu-body > .menu-items {
+  display: inline-flex;
+  gap: 0.5rem;
 }
 .menu > .menu-body .menu-items,
 .menu > .menu-body .menu-subitems {
@@ -11462,6 +11467,8 @@ pre[class*=language-] code {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.12s ease-in-out, width 0.12 ease-in-out, height 0.12s ease-in-out;
+  display: inline-flex;
+  gap: 0.5rem;
 }
 
 .menu:has(> .menu-header > .menu-header-nav > .action-view-mode > input[type=checkbox]:checked) {
@@ -11503,7 +11510,7 @@ pre[class*=language-] code {
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
-  padding: 0.75rem 0.75rem;
+  padding: 0.65rem 0.65rem;
   width: 100%;
   text-decoration: none;
 }
@@ -11570,7 +11577,7 @@ pre[class*=language-] code {
 .menu-item.active > .menu-subitems.shadow-line::before {
   content: "";
   height: 100%;
-  box-shadow: 0px 0px 4px 1px var(--nv-muted);
+  box-shadow: 0px 0px 3px 1px var(--nv-muted);
   position: absolute;
   left: 0;
 }
@@ -11612,14 +11619,14 @@ pre[class*=language-] code {
 }
 
 .scrollbar::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
   background-color: #ececec;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #F5F5F5;
-  background-image: -webkit-linear-gradient(top, #d4d4d4 0%, #d4d4d4 50%, #d4d4d4 51%, #d4d4d4 100%);
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(top, #d4d4d4 0%, #bebebe 25%, #bebebe 50%, #b9b9b9 100%);
 }
 
 .tab {
