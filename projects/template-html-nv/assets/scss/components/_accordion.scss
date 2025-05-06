@@ -1,0 +1,68 @@
+@mixin accordion-hidden() {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+}
+
+.accordion {
+  box-shadow: var(--nv-accordion-box-shadow);
+  border-radius: var(--nv-accordion-radius);
+  &.disable {
+    box-shadow: var(--nv-accordion-box-shadow-disabled);
+    > .accordion-header {
+      background-color: var(--nv-control-disabled);
+      > .title {
+        color: var(--nv-control-text-disabled);
+      }
+      > .btn-toggle {
+        cursor: unset;
+        > em {
+          color: var(--nv-control-text-disabled);
+        }
+      }
+    }
+    > .accordion-body {
+      @include accordion-hidden();
+    }
+  }
+  > .accordion-header {
+    padding: var(--nv-accordion-header-padding);
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    > .icon {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0.75rem;
+      > em {
+        font-size: 16px;
+        color: var(--nv-success);
+      }
+    }
+    > .title {
+      font-family: "Font-Regular";
+    }
+    > .btn-toggle {
+      display: inline-flex;
+      cursor: pointer;
+      margin-left: auto;
+      outline: none;
+      border: 0;
+      background-color: transparent;
+      > em {
+        color: var(--nv-secondary);
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  > .accordion-body {
+    padding: var(--nv-accordion-body-padding);
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+    &.hidden {
+      @include accordion-hidden();
+    }
+  }
+}
