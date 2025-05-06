@@ -75,6 +75,11 @@
   > .menu-body {
     overflow-y: auto;
     height: 82dvh;
+    padding-right: 0.5rem;
+    > .menu-items {
+      display: inline-flex;
+      gap: 0.5rem;
+    }
   }
 
   > .menu-body {
@@ -91,6 +96,8 @@
       opacity: 0;
       visibility: hidden;
       transition: opacity 0.12s ease-in-out, width 0.12 ease-in-out, height 0.12s ease-in-out;
+      display: inline-flex;
+      gap: 0.5rem;
     }
   }
 }
@@ -141,7 +148,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
-    padding: 0.75rem 0.75rem;
+    padding: 0.65rem 0.65rem;
     width: 100%;
     text-decoration: none;
     &:not(.menu-item-selected) {
@@ -215,7 +222,7 @@
         &::before {
           content: "";
           height: 100%;
-          box-shadow: 0px 0px 4px 1px var(--nv-muted);
+          box-shadow: 0px 0px 3px 1px var(--nv-muted);
           position: absolute;
           left: 0;
         }
