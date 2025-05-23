@@ -182,7 +182,7 @@ const menuRoutes = [
         icon: null,
         path: "/projects/template-html-nv/pages/panel/accordion.html",
         active: true,
-        span: 3,
+        span: 4,
         children: [],
       },
     ],
