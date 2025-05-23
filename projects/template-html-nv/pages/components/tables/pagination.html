@@ -36,36 +36,94 @@
           <div class="card">
             <h4 class="card-header">Basic</h4>
             <div class="card-body">
-              <div class="pagination">
-                <button class="first" type="button"><em class="bi-chevron-double-left"></em></button>
-                <button class="previous" type="button"><em class="bi-chevron-left"></em></button>
-                <div class="pages">
-                  <button class="page active">1</button>
-                  <button class="page">2</button>
-                  <button class="page">3</button>
-                  <button class="page">4</button>
-                  <button class="page">5</button>
+              <div id="tab-pagination-basic" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
                 </div>
-                <button class="next" type="button"><em class="bi-chevron-right"></em></button>
-                <button class="last" type="button"><em class="bi-chevron-double-right"></em></button>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <!-- Example -->
+                    <div class="pagination">
+                      <button class="first" type="button"><em class="bi-chevron-double-left"></em></button>
+                      <button class="previous" type="button"><em class="bi-chevron-left"></em></button>
+                      <div class="pages">
+                        <button class="page active">1</button>
+                        <button class="page">2</button>
+                        <button class="page">3</button>
+                        <button class="page">4</button>
+                        <button class="page">5</button>
+                      </div>
+                      <button class="next" type="button"><em class="bi-chevron-right"></em></button>
+                      <button class="last" type="button"><em class="bi-chevron-double-right"></em></button>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <!-- Code -->
+                    <pre><code class="language-markup">
+<div class="pagination">
+  <button class="first" type="button"><em class="bi-chevron-double-left"></em></button>
+  <button class="previous" type="button"><em class="bi-chevron-left"></em></button>
+  <div class="pages">
+    <button class="page active">1</button>
+    <button class="page">2</button>
+    <button class="page">3</button>
+    <button class="page">4</button>
+    <button class="page">5</button>
+  </div>
+  <button class="next" type="button"><em class="bi-chevron-right"></em></button>
+  <button class="last" type="button"><em class="bi-chevron-double-right"></em></button>
+</div>
+                      </code></pre>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="card mt-3">
             <h4 class="card-header">Rounded</h4>
             <div class="card-body">
-              <div class="pagination rounded">
-                <button class="first" type="button"><em class="bi-chevron-double-left"></em></button>
-                <button class="previous" type="button"><em class="bi-chevron-left"></em></button>
-                <div class="pages">
-                  <button class="page active">10</button>
-                  <button class="page">11</button>
-                  <button class="page">12</button>
-                  <button class="page">13</button>
-                  <button class="page">15</button>
+              <div id="tab-pagination-rounded" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
                 </div>
-                <button class="next" type="button"><em class="bi-chevron-right"></em></button>
-                <button class="last" type="button"><em class="bi-chevron-double-right"></em></button>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <!-- Example -->
+                    <div class="pagination rounded">
+                      <button class="first" type="button"><em class="bi-chevron-double-left"></em></button>
+                      <button class="previous" type="button"><em class="bi-chevron-left"></em></button>
+                      <div class="pages">
+                        <button class="page active">10</button>
+                        <button class="page">11</button>
+                        <button class="page">12</button>
+                        <button class="page">13</button>
+                        <button class="page">15</button>
+                      </div>
+                      <button class="next" type="button"><em class="bi-chevron-right"></em></button>
+                      <button class="last" type="button"><em class="bi-chevron-double-right"></em></button>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <!-- Code -->
+                    <pre><code class="language-markup">
+<div class="pagination rounded">
+  <button class="first" type="button"><em class="bi-chevron-double-left"></em></button>
+  <button class="previous" type="button"><em class="bi-chevron-left"></em></button>
+  <div class="pages">
+    <button class="page active">10</button>
+    <button class="page">11</button>
+    <button class="page">12</button>
+    <button class="page">13</button>
+    <button class="page">15</button>
+  </div>
+  <button class="next" type="button"><em class="bi-chevron-right"></em></button>
+  <button class="last" type="button"><em class="bi-chevron-double-right"></em></button>
+</div>
+                      </code></pre>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -83,5 +141,8 @@
   <!-- End: Tabs-->
   <script src="/projects/template-html-nv/assets/js/menu/menu-route.js"></script>
   <script src="/projects/template-html-nv/assets/js/menu/menu.js" defer></script>
-  <script></script>
+  <script>
+    fnTab("#tab-pagination-basic");
+    fnTab("#tab-pagination-rounded");
+  </script>
 </html>

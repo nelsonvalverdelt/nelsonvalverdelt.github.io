@@ -141,7 +141,7 @@ const menuRoutes = [
         icon: null,
         path: "/projects/template-html-nv/pages/components/alerts.html",
         active: true,
-        span: null,
+        span: 6,
         children: [],
       },
       {
@@ -182,7 +182,7 @@ const menuRoutes = [
         icon: null,
         path: "/projects/template-html-nv/pages/panel/accordion.html",
         active: true,
-        span: 3,
+        span: 4,
         children: [],
       },
     ],

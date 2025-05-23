@@ -53,7 +53,7 @@
   --nv-tabs-gap: 0.5rem;
   --nv-tabs-border-radius: 0.5rem;
   --nv-tabs-padding-item: 0.5rem 2rem;
-  --nv-tabs-body: 1.5rem 0;
+  --nv-tabs-body: 1.5rem 1.5rem;
   --nv-tabs-item-box-shadow: 0 -0.5px 0 0.5px var(--nv-muted);
   --nv-tabs-body-box-shadow: 0 0 0.5px 0.5px var(--nv-muted);
   --nv-tabs-curved-padding-item: 4rem;
