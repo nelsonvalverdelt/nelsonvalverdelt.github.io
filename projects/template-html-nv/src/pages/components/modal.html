@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modals NV - HTML / SCSS </title>
+    <link rel="stylesheet" href="/projects/template-html-nv/src/assets/vendors/prism/prism.css" />
+    <link rel="stylesheet" href="../../../dist/main.css" />
+    <link rel="stylesheet" href="../../../src/assets/vendors/styles/main.css" />
+    <!-- Favicons -->
+    <link href="../../../../../assets/img/favicon.png" rel="icon" />
+    <link href="../../../../../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="menu">
+        <div class="menu-header">
+          <div class="menu-header-nav">
+            <div class="logo"></div>
+            <div class="action-view-mode">
+              <input placeholder="switch" id="view-mode" type="checkbox" />
+              <label for="view-mode"></label>
+            </div>
+          </div>
+          <div class="search mt-4">
+            <input placeholder="search" id="search" type="text" placeholder="Search" />
+            <label for="search" class="bi-search"></label>
+          </div>
+        </div>
+        <div class="my-2">
+          <div class="line-vertical"></div>
+        </div>
+        <div class="menu-body scrollbar"></div>
+      </div>
+      <div class="main-body">
+        <div class="container">
+          <div class="card">
+            <h4 class="card-header">Modal basic</h4>
+            <div class="card-body">
+              <div id="tab-modal-basic" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <!-- Example -->
+                    <div class="d-flex flex-column gap-3">
+                      <div class="modal">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal (default or xs)</h4>
+                          <button type="button" class="btn-close">
+                            <em class="bi-x-lg"></em>
+                          </button>
+                        </div>
+                        <div class="modal-body">Modal body text goes here.</div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary">Close</button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                      <div class="modal modal-sm">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal (sm)</h4>
+                          <button type="button" class="btn-close">
+                            <em class="bi-x-lg"></em>
+                          </button>
+                        </div>
+                        <div class="modal-body">Modal body text goes here.</div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary">Close</button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                      <div class="modal modal-md">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal (md)</h4>
+                          <button type="button" class="btn-close">
+                            <em class="bi-x-lg"></em>
+                          </button>
+                        </div>
+                        <div class="modal-body">Modal body text goes here.</div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary">Close</button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                      <div class="modal modal-lg">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal (lg)</h4>
+                          <button type="button" class="btn-close">
+                            <em class="bi-x-lg"></em>
+                          </button>
+                        </div>
+                        <div class="modal-body">Modal body text goes here.</div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary">Close</button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                      <div class="modal modal-xl">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal (xl)</h4>
+                          <button type="button" class="btn-close">
+                            <em class="bi-x-lg"></em>
+                          </button>
+                        </div>
+                        <div class="modal-body">Modal body text goes here.</div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary">Close</button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                      <div class="modal modal-xxl">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal (xxl)</h4>
+                          <button type="button" class="btn-close">
+                            <em class="bi-x-lg"></em>
+                          </button>
+                        </div>
+                        <div class="modal-body">Modal body text goes here.</div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary">Close</button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <!-- Code -->
+                    <pre><code class="language-markup">
+<div class="d-flex flex-column gap-3">
+   <!-- Start Modal: default or xs -->
+  <div class="modal">
+    <div class="modal-header">
+      <h4 class="modal-title">Modal (default or xs)</h4>
+      <button type="button" class="btn-close">
+        <em class="bi-x-lg"></em>
+      </button>
+    </div>
+    <div class="modal-body">Modal body text goes here.</div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary">Close</button>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+   <!-- End Modal: default or xs -->
+
+  <!-- Start Modal: small -->
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <h4 class="modal-title">Modal (sm)</h4>
+      <button type="button" class="btn-close">
+        <em class="bi-x-lg"></em>
+      </button>
+    </div>
+    <div class="modal-body">Modal body text goes here.</div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary">Close</button>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+  <!-- End Modal: small -->
+
+  <!-- Start Modal: medium -->
+  <div class="modal modal-md">
+    <div class="modal-header">
+      <h4 class="modal-title">Modal (md)</h4>
+      <button type="button" class="btn-close">
+        <em class="bi-x-lg"></em>
+      </button>
+    </div>
+    <div class="modal-body">Modal body text goes here.</div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary">Close</button>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+  <!-- End Modal: medium -->
+
+  <!-- Start Modal: large -->
+  <div class="modal modal-lg">
+    <div class="modal-header">
+      <h4 class="modal-title">Modal (lg)</h4>
+      <button type="button" class="btn-close">
+        <em class="bi-x-lg"></em>
+      </button>
+    </div>
+    <div class="modal-body">Modal body text goes here.</div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary">Close</button>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+  <!-- End Modal: large -->
+
+  <!-- Start Modal: extra large -->
+  <div class="modal modal-xl">
+    <div class="modal-header">
+      <h4 class="modal-title">Modal (xl)</h4>
+      <button type="button" class="btn-close">
+        <em class="bi-x-lg"></em>
+      </button>
+    </div>
+    <div class="modal-body">Modal body text goes here.</div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary">Close</button>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+  <!-- End Modal: extra large -->
+
+  <!-- Start: Modal: xxl -->
+  <div class="modal modal-xxl">
+    <div class="modal-header">
+      <h4 class="modal-title">Modal (xxl)</h4>
+      <button type="button" class="btn-close">
+        <em class="bi-x-lg"></em>
+      </button>
+    </div>
+    <div class="modal-body">Modal body text goes here.</div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary">Close</button>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+  <!-- End: Modal: xxl -->
+</div>
+                      </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Start: Prism -->
+  <script src="/projects/template-html-nv/src/assets/vendors/prism/prism.js"></script>
+  <script src="/projects/template-html-nv/src/assets/js/prism/toast.js"></script>
+  <script src="/projects/template-html-nv/src/assets/js/prism/prism.js"></script>
+  <!-- End: Prism -->
+  <!-- Start: Tabs -->
+  <script src="/projects/template-html-nv/src/assets/js/tab.js"></script>
+  <!-- End: Tabs-->
+  <script src="/projects/template-html-nv/src/assets/js/menu/menu-route.js"></script>
+  <script src="/projects/template-html-nv/src/assets/js/menu/menu.js" defer></script>
+  <script>
+    fnTab("#tab-modal-basic");
+  </script>
+</html>

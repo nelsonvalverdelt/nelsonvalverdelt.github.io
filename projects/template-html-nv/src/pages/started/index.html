@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Started NV - HTML / SCSS</title>
+    <link rel="stylesheet" href="/projects/template-html-nv/src/assets/vendors/prism/prism.css" />
+    <link rel="stylesheet" href="../../../dist/main.css" />
+    <link rel="stylesheet" href="../../../src/assets/vendors/styles/main.css" />
+    <!-- Favicons -->
+    <link href="../../../../../assets/img/favicon.png" rel="icon" />
+    <link href="../../../../../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="menu">
+        <div class="menu-header">
+          <div class="menu-header-nav">
+            <div class="logo"></div>
+            <div class="action-view-mode">
+              <input id="view-mode" type="checkbox" placeholder="view-mode" />
+              <label for="view-mode"></label>
+            </div>
+          </div>
+          <div class="search mt-4">
+            <input id="search" type="text" placeholder="Search" />
+            <label for="search" class="bi-search"></label>
+          </div>
+        </div>
+        <div class="my-2">
+          <div class="line-vertical"></div>
+        </div>
+        <div class="menu-body scrollbar"></div>
+      </div>
+      <div class="main-body">
+        <div class="container"></div>
+      </div>
+    </div>
+  </body>
+  <!-- Start: Prism -->
+  <script src="/projects/template-html-nv/src/assets/vendors/prism/prism.js"></script>
+  <script src="/projects/template-html-nv/src/assets/js/prism/toast.js"></script>
+  <script src="/projects/template-html-nv/src/assets/js/prism/prism.js"></script>
+  <!-- End: Prism -->
+  <!-- Start: Tabs -->
+  <script src="/projects/template-html-nv/src/assets/js/tab.js"></script>
+  <!-- End: Tabs-->
+  <script src="/projects/template-html-nv/src/assets/js/menu/menu-route.js"></script>
+  <script src="/projects/template-html-nv/src/assets/js/menu/menu.js" defer></script>
+  <script>
+    fnTab("#tab-basic-card");
+  </script>
+</html>

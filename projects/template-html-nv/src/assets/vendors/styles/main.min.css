@@ -1,0 +1,13 @@
+code[class*=language-],pre[class*=language-]{width:100%;border-radius:7px;background-color:#000}
+pre[class*=language-]{display:flex;flex-wrap:wrap;border:.3em solid var(--nv-muted);position:relative;margin:0;padding:0;overflow:auto}
+pre[class*=language-]>button{position:absolute;top:.5rem;right:.5rem}
+pre[class*=language-] code .token.cdata,pre[class*=language-] code .token.comment,pre[class*=language-] code .token.doctype,pre[class*=language-] code .token.prolog{color:#e9dc78}
+pre[class*=language-] code .token.boolean,pre[class*=language-] code .token.constant,pre[class*=language-] code .token.deleted,pre[class*=language-] code .token.function-name,pre[class*=language-] code .token.number,pre[class*=language-] code .token.property,pre[class*=language-] code .token.symbol,pre[class*=language-] code .token.tag{color:#93c5fd}
+pre[class*=language-] code .token.atrule,pre[class*=language-] code .token.attr-value,pre[class*=language-] code .token.class-name,pre[class*=language-] code .token.keyword{color:#bbf7d0}
+pre[class*=language-] code .token.punctuation{color:#bfdbfe}
+pre[class*=language-] code .token.attr-name,pre[class*=language-] code .token.builtin,pre[class*=language-] code .token.char,pre[class*=language-] code .token.function,pre[class*=language-] code .token.inserted,pre[class*=language-] code .token.selector,pre[class*=language-] code .token.string{color:#eff6ff}
+pre[class*=language-] code{box-shadow:none;margin:0;font-size:14px;border-radius:10px;color:#fff;max-height:inherit;height:inherit;padding:0 1rem;display:block;overflow:auto}
+.prism-toast{width:100%;display:flex;align-items:center;justify-content:center;position:fixed;z-index:999;bottom:.5rem;transition:bottom ease-in-out .2s,opacity ease-in-out .2s,visibility ease-in-out .2s;opacity:1;visibility:visible}
+.prism-toast>.content{display:inline-flex;box-shadow:0 2px 4px 0 var(--nv-muted);padding:.5rem 1rem;border-radius:7px;gap:.5rem;background-color:#f0f0f0}
+.prism-toast>.content>.message{color:#000}
+.prism-toast.hide{bottom:-1rem;opacity:0;visibility:hidden}
