@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs NV - HTML / SCSS </title>
+    <link rel="stylesheet" href="/projects/template-html-nv/src/assets/vendors/prism/prism.css" />
+    <link rel="stylesheet" href="../../../dist/main.css" />
+    <link rel="stylesheet" href="../../../src/assets/vendors/styles/main.css" />
+    <!-- Favicons -->
+    <link href="../../../../../assets/img/favicon.png" rel="icon" />
+    <link href="../../../../../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="menu">
+        <div class="menu-header">
+          <div class="menu-header-nav">
+            <div class="logo"></div>
+            <div class="action-view-mode">
+              <input id="view-mode" type="checkbox" placeholder="view-mode" />
+              <label for="view-mode"></label>
+            </div>
+          </div>
+          <div class="search mt-4">
+            <input id="search" type="text" placeholder="Search" />
+            <label for="search" class="bi-search"></label>
+          </div>
+        </div>
+        <div class="my-2">
+          <div class="line-vertical"></div>
+        </div>
+        <div class="menu-body scrollbar"></div>
+      </div>
+      <div class="main-body">
+        <div class="container">
+          <div class="card">
+            <h4 class="card-header">Tab default</h4>
+            <div class="card-body">
+              <div id="tab" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <!-- Start : Tab -->
+                    <div class="tab">
+                      <div class="tab-header">
+                        <div class="tab-header-item active">Tab Demo 1</div>
+                        <div class="tab-header-item">Tab 2</div>
+                        <div class="tab-header-item">Tab 3</div>
+                        <div class="tab-header-item">Tab 4</div>
+                      </div>
+                      <div class="tab-body">
+                        <div class="tab-body-item active">
+                          <div class="px-3">
+                            <h4>Contenido Tab 1</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item">
+                          <div class="px-3">
+                            <h4>Contenido Tab 2</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item">
+                          <div class="px-3">
+                            <h4>Contenido Tab 3</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item">
+                          <div class="px-3">
+                            <h4>Contenido Tab 4</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End : Tab -->
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <!-- Start : Tab code -->
+                      <pre><code class="language-markup">
+  <div class="tab">
+    <div class="tab-header">
+      <div class="tab-header-item active">Tab Demo 1</div>
+      <div class="tab-header-item">Tab 2</div>
+      <div class="tab-header-item">Tab 3</div>
+      <div class="tab-header-item">Tab 4</div>
+    </div>
+    <div class="tab-body">
+      <div class="tab-body-item active">
+        <div class="px-3">
+          <h4>Contenido Tab 1</h4>
+        </div>
+      </div>
+      <div class="tab-body-item">
+        <div class="px-3">
+          <h4>Contenido Tab 2</h4>
+        </div>
+      </div>
+      <div class="tab-body-item">
+        <div class="px-3">
+          <h4>Contenido Tab 3</h4>
+        </div>
+      </div>
+      <div class="tab-body-item">
+        <div class="px-3">
+          <h4>Contenido Tab 4</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+                      </code></pre>
+                      <!-- Start : Tab code -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3">
+            <h4 class="card-header">Tab line</h4>
+            <div class="card-body">
+              <div id="tab2" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <!-- Start : Tab -->
+                    <div class="tab">
+                      <div class="tab-header line">
+                        <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
+                        <div id="tab2" class="tab-header-item">Tab Design 2</div>
+                        <div id="tab3" class="tab-header-item">Tab Curved 3</div>
+                        <div id="tab4" class="tab-header-item">Tab Test 4</div>
+                      </div>
+                      <div class="tab-body">
+                        <div class="tab-body-item tab1 active">
+                          <div class="px-3">
+                            <h4>Contenido Tab 1</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item tab2">
+                          <div class="px-3">
+                            <h4>Contenido Tab 2</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item tab3">
+                          <div class="px-3">
+                            <h4>Contenido Tab 3</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item tab4">
+                          <div class="px-3">
+                            <h4>Contenido Tab 4</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End : Tab -->
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <!-- Start : Tab code -->
+                      <pre><code class="language-markup">
+  <div class="tab">
+    <div class="tab-header line">
+      <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
+      <div id="tab2" class="tab-header-item">Tab Design 2</div>
+      <div id="tab3" class="tab-header-item">Tab Curved 3</div>
+      <div id="tab4" class="tab-header-item">Tab Test 4</div>
+    </div>
+    <div class="tab-body">
+      <div class="tab-body-item tab1 active">
+        <div class="px-3">
+          <h4>Contenido Tab 1</h4>
+        </div>
+      </div>
+      <div class="tab-body-item tab2">
+        <div class="px-3">
+          <h4>Contenido Tab 2</h4>
+        </div>
+      </div>
+      <div class="tab-body-item tab3">
+        <div class="px-3">
+          <h4>Contenido Tab 3</h4>
+        </div>
+      </div>
+      <div class="tab-body-item tab4">
+        <div class="px-3">
+          <h4>Contenido Tab 4</h4>
+        </div>
+      </div>
+    </div>
+  </div>  
+                      </code></pre>
+                      <!-- Start : Tab code -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3">
+            <h4 class="card-header">Tab curved</h4>
+            <div class="card-body">
+              <div id="tab3" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <!-- Start : Tab -->
+                    <div class="tab">
+                      <div class="tab-header curved">
+                        <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
+                        <div id="tab2" class="tab-header-item">Tab Design 2</div>
+                        <div id="tab3" class="tab-header-item">Tab Curved 3</div>
+                        <div id="tab4" class="tab-header-item">Tab Test 4</div>
+                      </div>
+                      <div class="tab-body">
+                        <div class="tab-body-item tab1 active">
+                          <div class="px-3">
+                            <h4>Contenido Tab 1</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item tab2">
+                          <div class="px-3">
+                            <h4>Contenido Tab 2</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item tab3">
+                          <div class="px-3">
+                            <h4>Contenido Tab 3</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item tab4">
+                          <div class="px-3">
+                            <h4>Contenido Tab 4</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End : Tab -->
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <!-- Start : Tab code -->
+                      <pre><code class="language-markup">
+  <div class="tab">
+    <div class="tab-header curved">
+      <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
+      <div id="tab2" class="tab-header-item">Tab Design 2</div>
+      <div id="tab3" class="tab-header-item">Tab Curved 3</div>
+      <div id="tab4" class="tab-header-item">Tab Test 4</div>
+    </div>
+    <div class="tab-body">
+      <div class="tab-body-item tab1 active">
+        <div class="px-3">
+          <h4>Contenido Tab 1</h4>
+        </div>
+      </div>
+      <div class="tab-body-item tab2">
+        <div class="px-3">
+          <h4>Contenido Tab 2</h4>
+        </div>
+      </div>
+      <div class="tab-body-item tab3">
+        <div class="px-3">
+          <h4>Contenido Tab 3</h4>
+        </div>
+      </div>
+      <div class="tab-body-item tab4">
+        <div class="px-3">
+          <h4>Contenido Tab 4</h4>
+        </div>
+      </div>
+    </div>
+</div>                        
+                      </code></pre>
+                      <!-- Start : Tab code -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3">
+            <h4 class="card-header">Tab curved</h4>
+            <div class="card-body">
+              <div id="tab4" class="tab">
+                <div class="tab-header curved line">
+                  <div id="tab1" class="tab-header-item active">Demo</div>
+                  <div id="tab2" class="tab-header-item">Html</div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-body-item tab1 active">
+                    <!-- Start : Tab -->
+                    <div class="tab">
+                      <div class="tab-header curved line">
+                        <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
+                        <div id="tab2" class="tab-header-item">Tab Design 2</div>
+                        <div id="tab3" class="tab-header-item">Tab Curved 3</div>
+                        <div id="tab4" class="tab-header-item">Tab Test 4</div>
+                      </div>
+                      <div class="tab-body">
+                        <div class="tab-body-item tab1 active">
+                          <div class="px-3">
+                            <h4>Contenido Tab 1</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item tab2">
+                          <div class="px-3">
+                            <h4>Contenido Tab 2</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item tab3">
+                          <div class="px-3">
+                            <h4>Contenido Tab 3</h4>
+                          </div>
+                        </div>
+                        <div class="tab-body-item tab4">
+                          <div class="px-3">
+                            <h4>Contenido Tab 4</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End : Tab -->
+                  </div>
+                  <div class="tab-body-item tab2">
+                    <div class="px-3">
+                      <!-- Start : Tab code -->
+                      <pre><code class="language-markup">
+  <div class="tab">
+    <div class="tab-header curved line">
+      <div id="tab1" class="tab-header-item active">Tab Demo 1</div>
+      <div id="tab2" class="tab-header-item">Tab Design 2</div>
+      <div id="tab3" class="tab-header-item">Tab Curved 3</div>
+      <div id="tab4" class="tab-header-item">Tab Test 4</div>
+    </div>
+    <div class="tab-body">
+      <div class="tab-body-item tab1 active">
+        <div class="px-3">
+          <h4>Contenido Tab 1</h4>
+        </div>
+      </div>
+      <div class="tab-body-item tab2">
+        <div class="px-3">
+          <h4>Contenido Tab 2</h4>
+        </div>
+      </div>
+      <div class="tab-body-item tab3">
+        <div class="px-3">
+          <h4>Contenido Tab 3</h4>
+        </div>
+      </div>
+      <div class="tab-body-item tab4">
+        <div class="px-3">
+          <h4>Contenido Tab 4</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+                      </code></pre>
+                      <!-- End : Tab code -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Start: Prism -->
+  <script src="/projects/template-html-nv/src/assets/vendors/prism/prism.js"></script>
+  <script src="/projects/template-html-nv/src/assets/js/prism/toast.js"></script>
+  <script src="/projects/template-html-nv/src/assets/js/prism/prism.js"></script>
+  <!-- End: Prism -->
+  <!-- Start: Tabs -->
+  <script src="/projects/template-html-nv/src/assets/js/tab.js"></script>
+  <!-- End: Tabs-->
+  <script src="/projects/template-html-nv/src/assets/js/menu/menu-route.js"></script>
+  <script src="/projects/template-html-nv/src/assets/js/menu/menu.js" defer></script>
+  <script>
+    fnTab("#tab");
+    fnTab("#tab2");
+    fnTab("#tab3");
+    fnTab("#tab4");
+  </script>
+</html>

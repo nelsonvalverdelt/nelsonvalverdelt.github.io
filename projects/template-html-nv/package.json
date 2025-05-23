@@ -1,0 +1,19 @@
+{
+  "name": "nv-styles",
+  "version": "0.0.1",
+  "description": "Una colección de estilos CSS/SCSS reutilizables",
+  "main": "dist/main.min.css",
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "css",
+    "styles",
+    "ui",
+    "design",
+    "scss",
+    "components"
+  ],
+  "author": "Nelson Valverde La Torre",
+  "license": "MIT"
+}
